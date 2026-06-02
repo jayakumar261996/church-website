@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="footer-grid">
             <div className="footer-brand">
               <img
-                src="../../../public/img/icon.svg"
+                src="/img/icon.svg"
                 alt="Ankur Narula Ministries"
                 className="footer-logo"
               />

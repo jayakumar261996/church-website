@@ -25,7 +25,7 @@ export default function ChurchLandingPage() {
           </p>
 
           <div className="hero-banner">
-            <img src="../../../public/img/1.svg" alt="" />
+            <img src="/img/1.svg" alt="" />
           </div>
         </section>
 
@@ -39,10 +39,10 @@ export default function ChurchLandingPage() {
           <div className="gold-sub">✞ Man Of God ✞</div>
 
           <div className="gallery-grid">
-            <img src="../../../public/img/5.svg" />
-            <img src="../../../public/img/2.svg" />
-            <img src="../../../public/img/3.svg" />
-            <img src="../../../public/img/4.svg" />
+            <img src="/img/5.svg" />
+            <img src="/img/2.svg" />
+            <img src="/img/3.svg" />
+            <img src="/img/4.svg" />
           </div>
 
           <div className="pastor-info">
@@ -63,17 +63,17 @@ export default function ChurchLandingPage() {
         <section className="cards container">
           <div className="cards-grid">
             <div className="card">
-              <img src="../../../public/img/1.svg" />
+              <img src="/img/1.svg" />
               <button>Prayer Request</button>
             </div>
 
             <div className="card">
-              <img src="../../../public/img/1.svg" />
+              <img src="/img/1.svg" />
               <button>Offerings</button>
             </div>
 
             <div className="card">
-              <img src="../../../public/img/1.svg" />
+              <img src="/img/1.svg" />
               <button>Zoom Lay Hand</button>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function ChurchLandingPage() {
           </div>
 
           <div className="schedule-banner">
-            <img src="../../../public/img/1.svg" />
+            <img src="/img/1.svg" />
           </div>
 
           <div className="schedule-grid">
@@ -128,7 +128,7 @@ export default function ChurchLandingPage() {
             </h3>
 
             <div className="sermon-banner">
-              <img src="../../../public/img/1.svg" />
+              <img src="/img/1.svg" />
             </div>
           </div>
         </section>
