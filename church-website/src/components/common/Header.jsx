@@ -15,7 +15,7 @@ export default function Header() {
       <div className="header-inner section">
         <nav className="header-nav">
           <div className="header-logo">
-            <img src="/logo.png" alt="Ankur Narula Ministries logo" />
+            <img src="../../../public/img/icon.svg" alt="Ankur Narula Ministries logo" />
             <p className="header-title">Ankur Narula Ministries</p>
           </div>
 
