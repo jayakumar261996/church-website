@@ -13,16 +13,18 @@ export default function ChurchLandingPage() {
           <div className="title-row">
             <div className="line"></div>
             <div>
-              <h1>Welcome to Ankur Narula Ministries</h1>
-              <h2>Jesus Christ’s Power in Signs and Wonders</h2>
+              <h1 className="hero-title-philosopher">Welcome to Ankur Narula Ministries</h1>
+              <h2 className="hero-subtitle-philosopher">The Church Of Signs And Wonders</h2>
             </div>
             <div className="line"></div>
           </div>
 
           <p>
-            Experience the power of Jesus Christ through signs, wonders and
-            faith.
+           Experience the power of Jesus Christ through signs, wonders, and faith We believe in the 
+           <br/>
+           living Word of God and in His mighty works among those who believe.
           </p>
+          
 
           <div className="hero-banner">
             <img src="/img/1.svg" alt="" />
@@ -141,7 +143,7 @@ export default function ChurchLandingPage() {
                 <div className="event-content">
                   <h4>Prayer Mountain Special Prayer</h4>
                   <button className="event-btn">
-                    LIVE
+                    Watch Now
                   </button>
                 </div>
               </div>
