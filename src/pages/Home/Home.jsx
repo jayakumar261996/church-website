@@ -27,7 +27,7 @@ export default function ChurchLandingPage() {
           
 
           <div className="hero-banner">
-            <img src="/img/1.svg" alt="" />
+            <img src="/img/hero-img.svg" alt="" />
           </div>
         </section>
 
@@ -65,17 +65,17 @@ export default function ChurchLandingPage() {
         <section className="cards container">
           <div className="cards-grid">
             <div className="card">
-              <img src="/img/1.svg" />
+              <img src="/img/prayer-request.svg" />
               <button>Prayer Request</button>
             </div>
 
             <div className="card">
-              <img src="/img/1.svg" />
+              <img src="/img/offering.svg" />
               <button>Offerings</button>
             </div>
 
             <div className="card">
-              <img src="/img/1.svg" />
+              <img src="/img/zoomlay.svg" />
               <button>Zoom Lay Hand</button>
             </div>
           </div>
@@ -88,9 +88,18 @@ export default function ChurchLandingPage() {
             <div className="line"></div>
           </div>
 
-          <div className="schedule-banner">
-            <img src="/img/1.svg" />
-          </div>
+        <div className="schedule-banner">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full h-auto"
+  >
+    <source src="/videos/father-preaching.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 
           <div className="schedule-grid">
             <div className="schedule-box">
@@ -130,7 +139,7 @@ export default function ChurchLandingPage() {
             </h3>
 
             <div className="sermon-banner">
-              <img src="/img/1.svg" />
+              <img src="/img/sermons.svg" />
             </div>
           </div>
         </section>
