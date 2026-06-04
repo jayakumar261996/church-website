@@ -13,19 +13,21 @@ export default function ChurchLandingPage() {
           <div className="title-row">
             <div className="line"></div>
             <div>
-              <h1>Welcome to Ankur Narula Ministries</h1>
-              <h2>Jesus Christ’s Power in Signs and Wonders</h2>
+              <h1 className="hero-title-philosopher">Welcome to Ankur Narula Ministries</h1>
+              <h2 className="hero-subtitle-philosopher">The Church Of Signs And Wonders</h2>
             </div>
             <div className="line"></div>
           </div>
 
           <p>
-            Experience the power of Jesus Christ through signs, wonders and
-            faith.
+           Experience the power of Jesus Christ through signs, wonders, and faith We believe in the 
+           <br/>
+           living Word of God and in His mighty works among those who believe.
           </p>
+          
 
           <div className="hero-banner">
-            <img src="/img/1.svg" alt="" />
+            <img src="/img/hero-img.svg" alt="" />
           </div>
         </section>
 
@@ -63,17 +65,17 @@ export default function ChurchLandingPage() {
         <section className="cards container">
           <div className="cards-grid">
             <div className="card">
-              <img src="/img/1.svg" />
+              <img src="/img/prayer-request.svg" />
               <button>Prayer Request</button>
             </div>
 
             <div className="card">
-              <img src="/img/1.svg" />
+              <img src="/img/offering.svg" />
               <button>Offerings</button>
             </div>
 
             <div className="card">
-              <img src="/img/1.svg" />
+              <img src="/img/zoomlay.svg" />
               <button>Zoom Lay Hand</button>
             </div>
           </div>
@@ -86,9 +88,18 @@ export default function ChurchLandingPage() {
             <div className="line"></div>
           </div>
 
-          <div className="schedule-banner">
-            <img src="/img/1.svg" />
-          </div>
+        <div className="schedule-banner">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full h-auto"
+  >
+    <source src="/videos/father-preaching.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 
           <div className="schedule-grid">
             <div className="schedule-box">
@@ -128,7 +139,7 @@ export default function ChurchLandingPage() {
             </h3>
 
             <div className="sermon-banner">
-              <img src="/img/1.svg" />
+              <img src="/img/sermons.svg" />
             </div>
           </div>
         </section>
@@ -141,7 +152,7 @@ export default function ChurchLandingPage() {
                 <div className="event-content">
                   <h4>Prayer Mountain Special Prayer</h4>
                   <button className="event-btn">
-                    LIVE
+                    Watch Now
                   </button>
                 </div>
               </div>
