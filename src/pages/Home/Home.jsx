@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/components/common/Header"
 import Footer from "@/components/common/Footer"
+import CloudinaryImage from "@/components/common/CloudinaryImage"
 
 export default function ChurchLandingPage() {
   return (
@@ -24,10 +25,19 @@ export default function ChurchLandingPage() {
            <br/>
            living Word of God and in His mighty works among those who believe.
           </p>
+           <div className="styled-text">
+             We believe in the <br />
+             living Word of God and in His mighty works among those who believe.  (Mark 16:17)
+           </div>
           
 
           <div className="hero-banner">
-            <img src="/img/hero-img.svg" alt="" />
+            <CloudinaryImage 
+              src="hero-img" 
+              alt="Hero Banner"
+              width={1200}
+              className="w-full h-auto"
+            />
           </div>
         </section>
 
@@ -89,7 +99,7 @@ export default function ChurchLandingPage() {
           </div>
 
         <div className="schedule-banner">
-  <video
+  {/* <video
     autoPlay
     muted
     loop
@@ -98,7 +108,7 @@ export default function ChurchLandingPage() {
   >
     <source src="/videos/father-preaching.mp4" type="video/mp4" />
     Your browser does not support the video tag.
-  </video>
+  </video> */}
 </div>
 
           <div className="schedule-grid">
