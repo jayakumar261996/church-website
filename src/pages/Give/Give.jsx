@@ -82,6 +82,7 @@ export default function Give() {
         <div className="give-qr-grid">
           {qrCodes.map((qr, index) => (
             <div key={index} className="give-qr-card">
+              
               <div className="give-qr-phone-frame">
                 <div className="give-qr-phone-notch"></div>
                 <div className="give-qr-content">

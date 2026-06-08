@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400&display=swap');
 @import "tailwindcss" source(none);
 @source "./**/*.{js,jsx,ts,tsx,html}";
 @import "tw-animate-css";
@@ -8,7 +9,7 @@
 
 @custom-variant dark (&:is(.dark *));
 :root {
-  --text: #6b6375;
+  --text: #333333;
   --text-h: #08060d;
   --bg: #fff;
   --border: oklch(0.922 0 0);
@@ -419,7 +420,7 @@ body{
 }
 
 .hero-banner{
-  margin-top:35px;
+  margin-top:45px;
 }
 
 .hero-banner img{
@@ -1040,7 +1041,7 @@ body {
 
 .page-shell {
   font-family: 'Poppins', sans-serif;
-  background: #fff;
+  background: #FFFFE9;
   color: #1a1a1a;
   overflow-x: hidden;
 }
@@ -1067,7 +1068,7 @@ body {
 }
 
 .section-dark {
-  background: #0a0a0a;
+  background: #122F4A;
   padding: 50px 20px;
   color: #fff;
 }
@@ -1108,10 +1109,10 @@ body {
 }
 
 .section-heading-alt-title {
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #FFD700;
+  font-family: 'Poppins', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #FFFFFF;
   white-space: nowrap;
 }
 
@@ -1140,12 +1141,13 @@ body {
 }
 
 .hero-title {
-  font-family: 'Cinzel', serif;
-  font-size: 32px;
-  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px;
+  font-weight: 600;
   color: #003080;
   line-height: 1.3;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .hero-highlight {
@@ -1164,10 +1166,11 @@ body {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  max-width: 900px;
+  max-width: 1140px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-  min-height: 320px;
+  margin-top: 40px;
+  /* background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); */
+  min-height: 583px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1245,7 +1248,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: linear-gradient(135deg, #0a1628, #1a2d5a, #0d1f4a);
+  /* background: linear-gradient(135deg, #0a1628, #1a2d5a, #0d1f4a); */
 }
 
 .hero-banner-badge {
@@ -1358,7 +1361,8 @@ body {
 }
 
 .feature-card-subtitle {
-  color: #aac4ff;
+  color: #122F4A;
+  max-width: 300px;
 }
 
 .feature-card-subtitle-light {
@@ -1398,6 +1402,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
+  max-width: 754px;
+  margin: 0 auto;
 }
 
 .vision-title {
@@ -1476,18 +1482,18 @@ body {
 }
 
 .stat-card-value {
-  font-family: 'Cinzel', serif;
-  font-size: 38px;
-  font-weight: 900;
-  background: linear-gradient(135deg, #FFD700, #FFA500);
+  font-family: 'Poppins', serif;
+  font-size: 32px;
+  font-weight: 500;
+  background: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px;
 }
 
 .stat-card-label {
-  color: #aac4ff;
-  font-size: 14px;
+  color: #FFFFFF;
+  font-size: 24px;
   letter-spacing: 1px;
 }
 
@@ -1575,7 +1581,13 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
 }
-
+.ministries-image {
+  width: 100%;
+  max-width: 1140px;
+  border-radius: 16px;
+  margin: 45px auto;
+  
+}
 .crusade-grid {
   margin-top: 24px;
 }
@@ -1883,12 +1895,13 @@ body {
 }
 
 .section-title {
-  font-family: 'Cinzel', serif;
-  font-size: 28px;
-  font-weight: 700;
-  color: #003080;
+  font-family: 'Poppins', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #808080;
   text-align: center;
   margin-bottom: 40px;
+  
 }
 
 .gold-divider {
@@ -1925,8 +1938,13 @@ body {
 
 .section-copy-center {
   text-align: center;
-  max-width: 600px;
+  max-width: 1139px;
   margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #0B0C1C;
+  font-weight: 400;
+  margin-top: -10px;
 }
 
 .section-heading-title {
@@ -2286,19 +2304,21 @@ body {
 }
 
 .give-hero-content {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .give-title {
-  font-size: 56px;
-  font-weight: 500;
-  color: #0F2F52;
+  font-size: 60px;
+  font-weight: 600;
+  color: #003471;
   margin-bottom: 24px;
   line-height: 1.3;
-  letter-spacing: -1.68px;
+  /* letter-spacing: -.68px; */
   text-align: center;
   width: 100%;
+  white-space: nowrap;
 }
 
 .give-verse,
@@ -2383,12 +2403,12 @@ body {
 }
 
 .give-section-title {
-   font-size: 26px;
+   font-size: 30px;
   font-weight: 600;
-  color: #0F2F52;
+  color: #1F3A5F;
   margin-bottom: 24px;
   line-height: 1.3;
-  letter-spacing: -1.68px;
+   font-family: 'poppins', serif;
   text-align: center;
   width: 100%;
 }
@@ -3453,6 +3473,8 @@ body {
   .vision-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .stats-grid {
@@ -3593,4 +3615,17 @@ img {
     font-size: 14px;
     line-height: 1.6;
   }
+}
+
+/* Styled text class - Lato italic */
+.styled-text {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 30px;
 }

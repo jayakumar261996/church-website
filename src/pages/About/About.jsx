@@ -66,26 +66,14 @@ export default function AboutPage() {
               <span className="gold-cross">✝</span>
             </div>
           </div>
-          <hr className="gold-hr gold-hr-centered" />
+          {/* <hr className="gold-hr gold-hr-centered" /> */}
 
           <p className="section-copy section-copy-center">
             The Church of Signs and Wonders (Ankur Narula Ministries) is a global revival ministry dedicated to spreading the Gospel of Jesus Christ through the power of the Holy Spirit. Founded in 2004 in Punjab, India, the ministry has grown from three members into a worldwide movement bringing healing, deliverance, and transformed lives.
           </p>
 
           <div className="hero-banner hero-banner-about">
-            <div className="hero-banner-badge">
-              <span className="hero-banner-badge-text">ANKUR NARULA MINISTRIES</span>
-            </div>
-            <div className="hero-banner-overlay">
-              <div className="hero-banner-emoji">🙏</div>
-            </div>
-            <div className="hero-banner-card">
-              <div className="hero-banner-card-icon">👨‍👩‍👦</div>
-            </div>
-            <div className="hero-banner-footer">
-              <p className="hero-banner-footer-title">Apostle Dr. Ankur Yoseph Narula</p>
-              <p className="hero-banner-footer-subtitle">Pastor Sonia Yoseph Narula</p>
-            </div>
+            <img src="/img/gatherings.svg" alt="About Us" />
           </div>
         </div>
       </section>
@@ -99,18 +87,20 @@ export default function AboutPage() {
             <h2 className="feature-card-title">Our Vision and Our mission</h2>
           </div>
 
-          <div className="vision-grid">
-            <div>
-              <h3 className="vision-title">Our Vision</h3>
-              <p className="section-copy">
-                "No one soul made aware!" – The ministry aims to see a global revival of faith, leading people through the transformative power of Jesus Christ, proclaiming the kingdom of God with signs and wonders following, until every nation has heard the Gospel.
-              </p>
-            </div>
-            <div>
-              <h3 className="vision-title">Our Mission</h3>
-              <p className="section-copy">
-                Spreading the Gospel of Jesus Christ, leading people into a deep relationship with God, and demonstrating His power through healing, deliverance, and transformation — reaching the broken, the lost, and the hopeless with the love of Christ.
-              </p>
+          <div className="vision-grid-wrapper">
+            <div className="vision-grid">
+              <div>
+                <h3 className="vision-title">Our Vision</h3>
+                <p className="section-copy">
+                  "No one soul made aware!" – The ministry aims to see a global revival of faith, leading people through the transformative power of Jesus Christ, proclaiming the kingdom of God with signs and wonders following, until every nation has heard the Gospel.
+                </p>
+              </div>
+              <div>
+                <h3 className="vision-title">Our Mission</h3>
+                <p className="section-copy">
+                  Spreading the Gospel of Jesus Christ, leading people into a deep relationship with God, and demonstrating His power through healing, deliverance, and transformation — reaching the broken, the lost, and the hopeless with the love of Christ.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -120,7 +110,7 @@ export default function AboutPage() {
       <section className="section section-white">
         <div className="section">
           <h2 className="section-title">Our Leaders</h2>
-          <hr className="gold-hr" />
+          {/* <hr className="gold-hr" /> */}
 
           <div className="grid-3 leader-grid">
             {LEADERS.map((leader, i) => (
