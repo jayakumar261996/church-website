@@ -2,8 +2,11 @@ import React from "react";
 import Header from "@/components/common/Header"
 import Footer from "@/components/common/Footer"
 import CloudinaryImage from "@/components/common/CloudinaryImage"
+import { useNavigate } from "react-router-dom";
 
 export default function ChurchLandingPage() {
+  const navigate = useNavigate();
+
   return (
     <>
 
@@ -90,7 +93,9 @@ export default function ChurchLandingPage() {
           <div className="cards-grid">
             <div className="card">
               <img src="/img/prayer-request.svg" />
-              <button>Prayer Request</button>
+             <button onClick={() => navigate("/prayer-request")}>
+        Prayer Request
+      </button>
             </div>
 
             <div className="card">
@@ -100,7 +105,9 @@ export default function ChurchLandingPage() {
 
             <div className="card">
               <img src="/img/zoomlay.svg" />
-              <button>Zoom Lay Hand</button>
+              <button onClick={() => navigate("/zoom-lay-hand")}>
+        Zoom Lay Hand
+      </button>
             </div>
           </div>
         </section>
