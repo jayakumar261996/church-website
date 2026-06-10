@@ -61,9 +61,20 @@ export default function AboutPage() {
         <div className="section">
           <div className="section-heading">
             <div className="gold-divider gold-divider-top">
-              <span className="gold-cross">✝</span>
+              <img
+  src="/img/cross.svg"
+  alt="Gold Divider"
+  className="gold-divider-image"
+  style={{ width: "84px", height: "84px" }}
+/>
               <h1 className="hero-title">About Us</h1>
-              <span className="gold-cross">✝</span>
+              {/* <span className="gold-cross">✝</span> */}
+             <img
+  src="/img/cross.svg"
+  alt="Gold Divider"
+  className="gold-divider-image"
+  style={{ width: "84px", height: "84px" }}
+/>
             </div>
           </div>
           {/* <hr className="gold-hr gold-hr-centered" /> */}
@@ -109,7 +120,7 @@ export default function AboutPage() {
       {/* ── OUR LEADERS ── */}
       <section className="section section-white">
         <div className="section">
-          <h2 className="section-title">Our Leaders</h2>
+          <h2 className="section-title" style={{ textAlign: "center", justifyContent: "center" }}>Our Leaders</h2>
           {/* <hr className="gold-hr" /> */}
 
           <div className="grid-3 leader-grid">
@@ -142,9 +153,20 @@ export default function AboutPage() {
         <div className="section">
           <div className="section-heading-alt">
             <div className="section-heading-rule" />
-            <span className="gold-cross section-heading-cross">✝</span>
+           <img
+  src="/img/cross.svg"
+  alt="Gold Divider"
+  className="gold-divider-image"
+  style={{ width: "84px", height: "84px" }}
+/>
             <h2 className="section-heading-alt-title">Ministry Statistics</h2>
-            <span className="gold-cross section-heading-cross">✝</span>
+             <img
+  src="/img/cross.svg"
+  alt="Gold Divider"
+  className="gold-divider-image"
+  style={{ width: "84px", height: "84px" }}
+/>
+           
             <div className="section-heading-rule" />
           </div>
 

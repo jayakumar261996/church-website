@@ -6,7 +6,7 @@ export default function Contact() {
         <div className="contact-top">
           <div className="contact-image">
             <img
-              src="/images/contact.jpg"
+              src="/img/contactus.svg"
               alt="Contact"
             />
           </div>
