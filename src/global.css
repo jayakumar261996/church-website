@@ -511,21 +511,33 @@ body{
 }
 
 .cards-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
+  display:flex;
+  justify-content:center;
+  align-items:center;
   gap:40px;
+  max-width:1200px;
+  margin:0 auto;
 }
 
 .card{
   background:white;
   padding:14px;
-  border-radius:10px;
+  border-radius:8px;
   box-shadow:0 2px 12px rgba(0,0,0,.08);
+  border:1px solid #e0e0e0;
+  opacity:1;
+  transform:rotate(0deg);
+  width:367px;
+  height:372px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }
 
 .card img{
   width:100%;
-  height:220px;
+  height:280px;
   object-fit:cover;
   border-radius:6px;
 }
@@ -607,8 +619,10 @@ body{
 
 .social h3{
   text-align:center;
-  font-size:40px;
-  color:#14396b;
+  font-size:38px;
+  color:#000000;
+  font-family: 'Poppins', serif;
+  font-weight: 500;
 }
 
 .social p{
@@ -620,6 +634,7 @@ body{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:20px;
+  
 }
 
 .social-card{
@@ -1392,10 +1407,10 @@ body {
 }
 
 .feature-panel-title {
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #003080;
+  font-family: 'Poppins', serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: #122F4A;
   margin-bottom: 14px;
 }
 
@@ -1504,30 +1519,31 @@ body {
 }
 
 .schedule-card-dark {
-  background: #003080;
+  background: #122F4A;
 }
 
 .schedule-card-light {
-  background: #f5f5f5;
+  background: #122F4A;
 }
 
 .schedule-card-label {
-  display: inline-block;
-  padding: 4px 14px;
+  
+  color: #122F4A;
   border-radius: 4px;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 24px;
   margin-bottom: 16px;
 }
 
 .schedule-card-dark .schedule-card-label {
-  background: #FFD700;
-  color: #003080;
+  color: #EFBF04;
+ 
+  /* color: #003080; */
 }
 
 .schedule-card-light .schedule-card-label {
-  background: #003080;
-  color: #fff;
+  background: #122F4A;
+  color: #EFBF04;
 }
 
 .schedule-list {
@@ -1552,6 +1568,8 @@ body {
 
 .button-row {
   margin-top: 16px;
+  
+  
 }
 
 .banner-section {
@@ -1576,11 +1594,11 @@ body {
 }
 
 .banner-text {
-  color: #FFD700;
-  font-family: 'Cinzel', serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  color: #FFFFFF;
+  font-family: 'Poppins', serif;
+  font-size: 28px;
+  font-weight: 500;
+  
 }
 .ministries-image {
   width: 100%;
@@ -1845,16 +1863,17 @@ body {
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, #D4A017, #FFD700, #B8860B);
-  color: #1a1a1a;
+  background: #EFBF04;
+  color: #0B0C1C;
+  width: 240px;
   border: none;
   padding: 10px 24px;
   border-radius: 25px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 18px;
+ 
+
 }
 
 .btn-gold:hover {
@@ -1880,8 +1899,8 @@ body {
 }
 
 .btn-live {
-  background: linear-gradient(135deg, #FFD700, #D4A017);
-  color: #1a1a1a;
+  background: #EFBF04;
+  color: #0B0C1C;
   border: none;
   padding: 7px 18px;
   border-radius: 20px;
@@ -1925,8 +1944,10 @@ body {
 }
 
 .section-copy {
-  color: #555;
-  font-size: 13px;
+  font-family: 'Poppins', serif;
+  color: #333333;
+  min-width: 435px;
+  font-size: 18px;
   line-height: 1.9;
 }
 
@@ -1999,8 +2020,11 @@ body {
 }
 
 .schedule-item {
-  font-size: 11px;
+  font-size: 18px;
+  font-family: 'Poppins', serif;
   line-height: 1.6;
+  color: #FFFFFF;
+  font-weight: 700;
 }
 
 .schedule-item--dark {

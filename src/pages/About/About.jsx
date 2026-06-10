@@ -1,5 +1,6 @@
 import Header from "@/components/common/Header"
 import Footer from "@/components/common/Footer"
+import { NavLink } from "react-router-dom"
 
 const FOOTER_LINKS = {
   Pages: ["Branches", "Prayer Request", "Give", "Prayer House", "Prayer Mountain", "Sunday School", "Bible College", "Sophia College"],
@@ -228,9 +229,13 @@ export default function AboutPage() {
             <div className="feature-panel">
               <h2 className="feature-panel-title">Faith Resources</h2>
               <p className="section-copy">
-                Explore books, teachings, and spiritual resources that will strengthen your walk with God. Our store offers a wide range of materials to help you grow in faith, deepen your understanding of the Word, and experience breakthrough in every area of life.
+                Explore books, teachings, and spiritual resources that will strengthen your walk with God.
               </p>
-              <button className="btn-gold">Visit the Store Now</button>
+              <NavLink to="/store">
+  <button className="btn-gold">
+    Visit the Store Now
+  </button>
+</NavLink>
             </div>
           </div>
         </div>
