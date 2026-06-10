@@ -48,7 +48,21 @@ export default function ChurchLandingPage() {
             <div className="line"></div>
           </div>
 
-          <div className="gold-sub">✞ Man Of God ✞</div>
+          <div className="gold-sub" style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "10px" }}>
+            <img
+              src="/img/cross.svg"
+              alt="Gold Divider"
+              className="gold-divider-image"
+              style={{ width: "84px", height: "84px" }}
+            />
+            <span>Man Of God</span>
+            <img
+              src="/img/cross.svg"
+              alt="Gold Divider"
+              className="gold-divider-image"
+              style={{ width: "84px", height: "84px" }}
+            />
+          </div>
 
           <div className="gallery-grid">
             <img src="/img/5.svg" />
