@@ -1,3 +1,4 @@
+import PrayerRequestForm from "./prayerRequestForm";
 
 
 export default function PrayerRequest() {
@@ -7,7 +8,7 @@ export default function PrayerRequest() {
       <div className="ministries-image my-8">
         <img src="/img/prayerRequest.svg" alt="Ministries" className="w-full h-auto" />
       </div>
-      <section className="page-events p-8">
+      <section className="page-events"  style={{ padding: '2rem' }}>
         <div className="section-heading">
             <div className="gold-divider gold-divider-top">
               <img
@@ -26,6 +27,9 @@ export default function PrayerRequest() {
 />
             </div>
           </div>
+         <div style={{ width: "560px", margin: "2rem auto 3rem", padding: "0" }}>
+  <PrayerRequestForm />
+</div>
      
       
     </section>

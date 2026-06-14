@@ -38,8 +38,8 @@ export default function ChurchLandingPage() {
             <CloudinaryImage 
               src="hero-img" 
               alt="Hero Banner"
-              width={1200}
-              className="w-full h-auto"
+              width={1140}
+              className="w-full h-[620px]"
             />
           </div>
         </section>
@@ -56,14 +56,14 @@ export default function ChurchLandingPage() {
               src="/img/cross.svg"
               alt="Gold Divider"
               className="gold-divider-image"
-              style={{ width: "84px", height: "84px" }}
+              style={{ width: "47px", height: "47px" }}
             />
             <span>Man Of God</span>
             <img
               src="/img/cross.svg"
               alt="Gold Divider"
               className="gold-divider-image"
-              style={{ width: "84px", height: "84px" }}
+              style={{ width: "47px", height: "47px" }}
             />
           </div>
 
@@ -80,9 +80,9 @@ export default function ChurchLandingPage() {
               Founder & Senior Pastor
             </div>
 
-            <p>
-              Apostle Dr. Ankur Yoseph Narula is the founder and overseer of the
-              church and ministry.
+            <p className="pastor-description">
+              Apostle Dr. Ankur Yoseph Narula is the Founder and Overseer of The Church of Signs and Wonders 
+Ankur Narula Ministries, which is one of the fastest-growing churches in India.
             </p>
 
             <button className="btn">Know More</button>
