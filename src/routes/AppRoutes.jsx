@@ -10,6 +10,8 @@ import Contact from '@/pages/Contact/Contact'
 import StorePage from '@/pages/Store/store'
 import PrayerRequest from '@/pages/PrayerRequest/prayerRequest'
 import ZoomLayHand from '@/pages/zoomLayhand/zoomlayhand'
+import OurBranches from '@/pages/ourbranches/branches'
+import Prayer from '@/pages/prayer-mountain/prayer'
 // import StorePage from '@/pages/Store/store' // Import the Store page component
 
 export default function AppRoutes() {
@@ -27,6 +29,9 @@ export default function AppRoutes() {
           <Route path="store" element={<StorePage />} /> 
           <Route path="prayer-request" element={<PrayerRequest />} />
           <Route path="zoom-lay-hand" element={<ZoomLayHand />} />
+          <Route path="our-branches" element={<OurBranches />} />
+          <Route path="prayer" element={<Prayer />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
