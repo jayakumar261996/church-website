@@ -85,6 +85,7 @@ Give your Tithe & Offerings to the Lord </h1>
             src={qr.image}
             alt={qr.name}
             className="give-qr-image"
+            style={{ width: '405px', height: '811px', objectFit: 'contain' }}
           />
         </div>
       ))}

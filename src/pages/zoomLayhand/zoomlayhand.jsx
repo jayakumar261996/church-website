@@ -1,162 +1,144 @@
 export default function ZoomLayHand() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    
     <section className="page-ministries p-8" style={{ backgroundColor: '#fff' }}>
-      <div className="ministries-image my-8">
+      <div className="ministries-image" style={{ marginBottom: '0.5rem' }}>
         <img src="/img/zoomlayhand.svg" alt="Ministries" className="w-full h-auto" />
       </div>
-      <section className="page-events p-8" style={{ backgroundColor: '#fff' }}>
+      <section className="page-events" style={{ padding: '0.5rem 2rem 2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', backgroundColor: '#fff' }}>
         <div className="section-heading">
           <div className="gold-divider gold-divider-top">
             <img src="/img/cross.svg" alt="Gold Divider" className="gold-divider-image" style={{ width: "84px", height: "84px" }} />
-            <h1 className="hero-title">Zoom Lay Hand</h1>
+            <h1 className="hero-title" style={{ marginTop: '0.5rem' }}>Zoom Lay Hand</h1>
             <img src="/img/cross.svg" alt="Gold Divider" className="gold-divider-image" style={{ width: "84px", height: "84px" }} />
           </div>
         </div>
 
-        {/* ── Registration Form ── */}
-        <div style={{ width: "560px", margin: "2rem auto 3rem", padding: "0" }}>
+        <div style={{ width: "1140px", maxWidth: "100%", margin: "0 auto 3rem", padding: "0" }}>
+          <form className="prayer-form" onSubmit={handleSubmit}>
 
-          {/* First Name + Gender */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "16px" }}>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>First Name</label>
-              <input type="text" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
+            <div className="form-row">
+              <div className="form-field">
+                <label>First Name</label>
+                <input type="text" />
+              </div>
+              <div className="form-field">
+                <label>Gender</label>
+                <select>
+                  <option value="">Select</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </div>
             </div>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Gender</label>
-              <select style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px", background: "#fff" }}>
-                <option value=""></option>
-                <option>Male</option>
-                <option>Female</option>
-                <option>Other</option>
-              </select>
+
+            <div className="form-row">
+              <div className="form-field">
+                <label>Age</label>
+                <input type="text" />
+              </div>
+              <div className="form-field">
+                <label>Nationality</label>
+                <input type="text" />
+              </div>
             </div>
-          </div>
 
-          {/* Age + Nationality */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "16px" }}>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Age</label>
-              <input type="text" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
+            <div className="form-row">
+              <div className="form-field">
+                <label>Profession</label>
+                <input type="text" />
+              </div>
+              <div className="form-field">
+                <label>Email</label>
+                <input type="email" />
+              </div>
             </div>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Nationality</label>
-              <input type="text" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
+
+            <div className="form-field">
+              <label>Phone</label>
+              <input type="tel" />
             </div>
-          </div>
 
-          {/* Profession + Email */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "16px" }}>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Profession</label>
-              <input type="text" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
+            <div className="form-field">
+              <label>Address</label>
+              <textarea rows={5} />
             </div>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Email</label>
-              <input type="email" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
+
+            <h2 style={{ textAlign: "center", fontSize: "24px", fontWeight: "600", color: "#344054", margin: "1rem 0" }}>Emergency Contact Optional</h2>
+
+            <div className="form-row">
+              <div className="form-field">
+                <label>Relative's Name</label>
+                <input type="text" />
+              </div>
+              <div className="form-field">
+                <label>Relative's Phone Number</label>
+                <input type="tel" />
+              </div>
             </div>
-          </div>
 
-          {/* Phone */}
-          <div style={{ marginBottom: "16px" }}>
-            <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Phone</label>
-            <input type="tel" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
-          </div>
-
-          {/* Emergency Contact */}
-          <h2 style={{ textAlign: "center", fontSize: "16px", fontWeight: "500", color: "#333", margin: "2rem 0 1rem" }}>Emergency Contact Optional</h2>
-
-          {/* Relative Name + Phone */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "16px" }}>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Relative's name</label>
-              <input type="text" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
+            <div className="form-field">
+              <label>Relative's Email</label>
+              <input type="email" />
             </div>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Relatives Phone Number</label>
-              <input type="tel" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
+
+            <div className="form-field">
+              <label>Health Situation &amp; Any Sickness Or Medical Condition</label>
+              <textarea rows={5} />
             </div>
-          </div>
 
-          {/* Relative Email */}
-          <div style={{ marginBottom: "16px" }}>
-            <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Relative's Email</label>
-            <input type="email" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
-          </div>
-
-          {/* Health Situation */}
-          <div style={{ marginBottom: "16px" }}>
-            <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Health Situation &amp; Any Sickness Or Medical Condition</label>
-            <textarea rows={4} style={{ width: "100%", boxSizing: "border-box", height: "74px", border: "1px solid #ccc", borderRadius: "4px", padding: "8px 10px", fontSize: "14px", resize: "vertical" }} />
-          </div>
-
-          {/* Address */}
-          <div style={{ marginBottom: "16px" }}>
-            <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Address</label>
-            <textarea rows={4} style={{ width: "100%", boxSizing: "border-box", height: "74px", border: "1px solid #ccc", borderRadius: "4px", padding: "8px 10px", fontSize: "14px", resize: "vertical" }} />
-          </div>
-
-          {/* Nature of problem */}
-          <div style={{ marginBottom: "16px" }}>
-            <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Nature of the problem</label>
-            <textarea rows={4} style={{ width: "100%", boxSizing: "border-box", height: "74px", border: "1px solid #ccc", borderRadius: "4px", padding: "8px 10px", fontSize: "14px", resize: "vertical" }} />
-          </div>
-
-          {/* How long */}
-          <div style={{ marginBottom: "16px" }}>
-            <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>How long has this been going on?</label>
-            <input type="text" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
-          </div>
-
-          {/* Effect on daily life */}
-          <div style={{ marginBottom: "16px" }}>
-            <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Effect on daily life</label>
-            <input type="text" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
-          </div>
-
-          {/* Hospitalized + Medical devices */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "16px" }}>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Ever hospitalized?</label>
-              <select style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px", background: "#fff" }}>
-                <option value=""></option>
-                <option>Yes</option>
-                <option>No</option>
-              </select>
+            <div className="form-field">
+              <label>Nature of the Problem</label>
+              <textarea rows={5} />
             </div>
-            <div>
-              <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Using any medical devices?</label>
-              <select style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px", background: "#fff" }}>
-                <option value=""></option>
-                <option>Yes</option>
-                <option>No</option>
-              </select>
+
+            <div className="form-field">
+              <label>How Long Has This Been Going On?</label>
+              <input type="text" />
             </div>
-          </div>
 
-          {/* Zoom availability */}
-          <div style={{ marginBottom: "16px" }}>
-            <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Zoom availability (time zones / preferred windows)</label>
-            <input type="text" style={{ width: "100%", boxSizing: "border-box", height: "40px", border: "1px solid #ccc", borderRadius: "4px", padding: "0 10px", fontSize: "14px" }} />
-          </div>
+            <div className="form-field">
+              <label>Effect on Daily Life</label>
+              <input type="text" />
+            </div>
 
-          {/* Additional Comments */}
-          <div style={{ marginBottom: "24px" }}>
-            <label style={{ display: "block", fontSize: "13px", color: "#555", marginBottom: "4px" }}>Additional Comments</label>
-            <textarea rows={4} style={{ width: "100%", boxSizing: "border-box", height: "74px", border: "1px solid #ccc", borderRadius: "4px", padding: "8px 10px", fontSize: "14px", resize: "vertical" }} />
-          </div>
+            <div className="form-row">
+              <div className="form-field">
+                <label>Ever Hospitalized?</label>
+                <select>
+                  <option value="">Select</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div className="form-field">
+                <label>Using Any Medical Devices?</label>
+                <select>
+                  <option value="">Select</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+            </div>
 
-          {/* Submit */}
-          <div style={{ display: "flex", justifyContent: "center", marginTop: "2rem" }}>
-            <button style={{ background: "#c9a227", color: "#fff", border: "none", borderRadius: "6px", padding: "12px 60px", fontSize: "15px", fontWeight: "600", cursor: "pointer", letterSpacing: "0.3px" }}>
-              Submit
-            </button>
-          </div>
+            <div className="form-field">
+              <label>Zoom Availability (Time Zones / Preferred Windows)</label>
+              <input type="text" />
+            </div>
 
+            <div className="form-field">
+              <label>Additional Comments</label>
+              <textarea rows={5} />
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </section>
     </section>
-    
-  )
+  );
 }
