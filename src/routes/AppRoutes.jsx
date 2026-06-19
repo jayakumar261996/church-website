@@ -12,6 +12,11 @@ import PrayerRequest from '@/pages/PrayerRequest/prayerRequest'
 import ZoomLayHand from '@/pages/zoomLayhand/zoomlayhand'
 import OurBranches from '@/pages/ourbranches/branches'
 import Prayer from '@/pages/prayer-mountain/prayer'
+import PrayerHouse from '@/pages/prayer-house/prayerHouse'
+import BibleCollege from '@/pages/BibleCollege/bibleCollage'
+import SophiaCollege from '@/pages/SophiaCollege/sophiaCollege'
+import SundaySchool from '@/pages/SundaySchool/sundaySchool'
+import Multimedia from '@/pages/multimediaInstitute/multimedia'
 // import StorePage from '@/pages/Store/store' // Import the Store page component
 
 export default function AppRoutes() {
@@ -31,6 +36,14 @@ export default function AppRoutes() {
           <Route path="zoom-lay-hand" element={<ZoomLayHand />} />
           <Route path="our-branches" element={<OurBranches />} />
           <Route path="prayer" element={<Prayer />} />
+          <Route path="bible-college" element={<BibleCollege />} />
+          <Route path="prayer-house" element={<PrayerHouse />} />
+         <Route path="sofia-college" element={<SophiaCollege />} />
+          <Route path="sunday-school" element={<SundaySchool />} />
+           <Route path="multi-media" element={<Multimedia />} />
+
+          
+          
 
         </Route>
       </Routes>
