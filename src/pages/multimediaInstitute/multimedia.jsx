@@ -1,4 +1,13 @@
-import { useEffect } from "react";
+
+
+
+
+
+
+
+
+
+
 
 const books = [
   {
@@ -23,23 +32,10 @@ const books = [
 
 
 
-export default function Prayer() {
-  useEffect(() => {
-    const layout = document.querySelector(".app-layout");
-    if (layout) {
-      layout.style.background =
-        "linear-gradient(to bottom, #FFFFE9 0, #FFFFE9 436.671875px, transparent 436.671875px)";
-    }
-    return () => {
-      if (layout) {
-        layout.style.background = "";
-      }
-    };
-  }, []);
-
+export default function Multimedia() {
   return (
-    <section className="page-ministries p-8">
-      
+    <section className="page-ministries p-8 prayer-mountain-bg">
+     
       <div className="section-heading">
             <div className="gold-divider gold-divider-top">
               <img
@@ -73,9 +69,9 @@ God and leave spiritually rejuvenated.
 
        <section className="banner-section">
         <div className="banner-content">
-          <div className="line"></div>
+          <div className="banner-rule" />
           <p className="banner-text">SCENES OF PRAYER MOUNTAIN</p>
-           <div className="line"></div>
+          <div className="banner-rule" />
         </div>
       </section>
 
@@ -89,9 +85,9 @@ God and leave spiritually rejuvenated.
 
       <section className="banner-section">
         <div className="banner-content">
-          <div className="line"></div>
+          <div className="banner-rule" />
           <p className="banner-text">What is Prayer Mountain?</p>
-          <div className="line"></div>
+          <div className="banner-rule" />
           
         </div>
          <div className="section-copy-center">
@@ -103,9 +99,9 @@ God and leave spiritually rejuvenated.
 
        <section className="banner-section">
         <div className="banner-content">
-          <div className="line"></div>
-          <p className="banner-text">Purpose & vision</p>
-          <div className="line"></div>
+          <div className="banner-rule" />
+          <p className="banner-text">What is Prayer Mountain?</p>
+          <div className="banner-rule" />
           
         </div>
          <div className="section-copy-center">
@@ -117,9 +113,9 @@ God and leave spiritually rejuvenated.
 
        <section className="banner-section">
         <div className="banner-content">
-          <div className="line"></div>
+          <div className="banner-rule" />
           <p className="banner-text">TESTIMONIES FOR GODS GLORY</p>
-          <div className="line"></div>
+          <div className="banner-rule" />
           
         </div>
          
@@ -130,9 +126,9 @@ God and leave spiritually rejuvenated.
 
        <section className="banner-section">
         <div className="banner-content">
-          <div className="line"></div>
+          <div className="banner-rule" />
           <p className="banner-text">JOIN US IN PRAYERS</p>
-          <div className="line"></div>
+          <div className="banner-rule" />
           
         </div>
          

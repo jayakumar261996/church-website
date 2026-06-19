@@ -1,39 +1,49 @@
+import { href } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 export default function Ministries() {
 const ministries = [
   {
     image: "/img/event1.svg",
     title: "PRAYER MOUNTAIN",
     description: "A place of prayer, fasting, and spiritual renewal.",
+    href: "/prayer",
   },
   {
     image: "/img/event2.svg",
     title: "PRAYER HOUSE",
     description: "Dedicated to intercession and worship services.",
+    href: "/prayer-house",
   },
   {
     image: "/img/event3.svg",
     title: "BIBLE COLLEGE",
     description: "Equipping believers through biblical education.",
+    href: "/bible-college",
   },
   {
     image: "/img/event3.svg",
     title: "SOFIA COLLEGE",
     description: "Providing quality education with Christian values.",
+    href: "/sofia-college",
   },
   {
     image: "/img/event3.svg",
     title: "BRANCHES CHURCHES",
     description: "Extending the ministry through local congregations.",
+    href: "/our-branches",
   },
   {
     image: "/img/event3.svg",
     title: "SUNDAY SCHOOL",
     description: "Teaching children God's Word in a joyful environment.",
+    href: "/sunday-school",
   },
   {
     image: "/img/event3.svg",
     title: "MULTIMEDIA COLLEGE",
     description: "Training students in media and creative technologies.",
+    href: "/multimedia-college",
   },
 ];
   return (
@@ -82,9 +92,9 @@ const ministries = [
           {event.description}
         </p>
 
-        <button className="event-btn">
+        <Link to={event.href} className="event-btn">
           Learn More
-        </button>
+        </Link>
       </div>
     </div>
   ))}
