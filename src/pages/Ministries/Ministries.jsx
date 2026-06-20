@@ -4,45 +4,45 @@ import { Link } from "react-router-dom";
 export default function Ministries() {
 const ministries = [
   {
-    image: "/img/event1.svg",
+    image: "/img/prayer-mountain.png",
     title: "PRAYER MOUNTAIN",
-    description: "A place of prayer, fasting, and spiritual renewal.",
+    description: "A peaceful place for prayer, fasting, and spiritual retreat",
     href: "/prayer",
   },
   {
-    image: "/img/event2.svg",
+    image: "/img/prayer-house.png",
     title: "PRAYER HOUSE",
-    description: "Dedicated to intercession and worship services.",
+    description: "A peaceful place for prayer, fasting, and spiritual retreat",
     href: "/prayer-house",
   },
   {
-    image: "/img/event3.svg",
+    image: "/img/bible-college.png",
     title: "BIBLE COLLEGE",
-    description: "Equipping believers through biblical education.",
+    description: "A peaceful place for prayer, fasting, and spiritual retreat",
     href: "/bible-college",
   },
   {
-    image: "/img/event3.svg",
+    image: "/img/sofia-college.png",
     title: "SOFIA COLLEGE",
-    description: "Providing quality education with Christian values.",
+    description: "A peaceful place for prayer, fasting, and spiritual retreat",
     href: "/sofia-college",
   },
   {
-    image: "/img/event3.svg",
+    image: "/img/branches-churches.png",
     title: "BRANCHES CHURCHES",
-    description: "Extending the ministry through local congregations.",
+    description: "A peaceful place for prayer, fasting, and spiritual retreat",
     href: "/our-branches",
   },
   {
-    image: "/img/event3.svg",
+    image: "/img/sunday-school.png",
     title: "SUNDAY SCHOOL",
-    description: "Teaching children God's Word in a joyful environment.",
+    description: "A peaceful place for prayer, fasting, and spiritual retreat.",
     href: "/sunday-school",
   },
   {
-    image: "/img/event3.svg",
+    image: "/img/branches-churches.png",
     title: "MULTIMEDIA COLLEGE",
-    description: "Training students in media and creative technologies.",
+    description: "A peaceful place for prayer, fasting, and spiritual retreat",
     href: "/multimedia-college",
   },
 ];
@@ -57,8 +57,8 @@ const ministries = [
       </div>
 
       {/* Heading Section */}
-      <div className="flex items-center justify-center gap-4 my-8">
-        <div className="section-heading-rule flex-1" />
+      <div className="flex items-center my-8 px-0">
+        <div className="line flex-1" />
 
         <img
           src="/img/cross.svg"
@@ -66,7 +66,7 @@ const ministries = [
           style={{ width: "84px", height: "84px" }}
         />
 
-        <h2 className="section-heading-alt-2-title whitespace-nowrap">
+        <h2 className="section-heading-alt-2-title whitespace-nowrap px-4">
           Ministries of Over View
         </h2>
 
@@ -76,11 +76,11 @@ const ministries = [
           style={{ width: "84px", height: "84px" }}
         />
 
-        <div className="section-heading-rule flex-1" />
+        <div className="line flex-1" />
       </div>
 
       {/* Grid Section */}
-      <div className="events-grid" style={{ marginTop: "40px" }}>
+      <div className="events-grid" style={{ marginTop: "40px", marginBottom: "80px"}}>
   {ministries.map((event, index) => (
     <div className="event-card" key={index}>
       <img src={event.image} alt={event.title} />
@@ -101,9 +101,9 @@ const ministries = [
 </div>
        <section className="banner-section">
         <div className="banner-content">
-          <div className="banner-rule" />
+          <div className="branches-line" />
           <p className="banner-text">Our Head Church Jalanader</p>
-          <div className="banner-rule" />
+          <div className="branches-line" />
         </div>
       </section>
       <div className="ministries-image my-8">
@@ -119,9 +119,9 @@ const ministries = [
 
            <section className="banner-section">
         <div className="banner-content">
-          <div className="banner-rule" />
+          <div className="branches-line" />
           <p className="banner-text">Live Services</p>
-          <div className="banner-rule" />
+          <div className="branches-line" />
         </div>
         
       </section>
@@ -134,9 +134,9 @@ const ministries = [
       </div>
        <section className="banner-section">
         <div className="banner-content">
-          <div className="banner-rule" />
+          <div className="branches-line" />
           <p className="banner-text">Our Worship Team</p>
-          <div className="banner-rule" />
+          <div className="branches-line" />
         </div>
 
       </section>
