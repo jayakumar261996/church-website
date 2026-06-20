@@ -17,6 +17,8 @@ import BibleCollege from '@/pages/BibleCollege/bibleCollage'
 import SophiaCollege from '@/pages/SophiaCollege/sophiaCollege'
 import SundaySchool from '@/pages/SundaySchool/sundaySchool'
 import Multimedia from '@/pages/multimediaInstitute/multimedia'
+import Testimonials from '@/pages/testimonials/testimonials'
+import Testimonial2 from '@/pages/testimonials/testimonial-2'
 // import StorePage from '@/pages/Store/store' // Import the Store page component
 
 export default function AppRoutes() {
@@ -41,6 +43,8 @@ export default function AppRoutes() {
          <Route path="sofia-college" element={<SophiaCollege />} />
           <Route path="sunday-school" element={<SundaySchool />} />
            <Route path="multi-media" element={<Multimedia />} />
+           <Route path="testimonials" element={<Testimonials />} />
+             <Route path="testimonial-2" element={<Testimonial2 />} />
 
           
           

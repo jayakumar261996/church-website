@@ -698,22 +698,58 @@ pastor-description p{
 .events-grid{
   width: 80%;
   margin: 0 auto;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
+  display:flex;
+  flex-wrap:wrap;
   gap:25px;
+  justify-content:center;
 }
 
 .event-card{
+  width:367px;
+  height:451px;
+  border-radius:20px;
   background:white;
-  border-radius:12px;
   overflow:hidden;
   box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
-.event-card img{
+.page-events{
+  background-color:#FFFFE9;
+}
+
+.page-events .event-card{
+  height:647px;
+}
+
+.page-events .event-card img{
   width:100%;
-  height:200px;
+  height:100%;
   object-fit:cover;
+  border-radius:20px;
+  margin:0;
+}
+
+.upcoming-event-card{
+  width:513px;
+  height:646px;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.upcoming-event-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+.event-card img{
+  width:315px;
+  height:241px;
+  border-radius:12px;
+  opacity:1;
+  display:block;
+  margin:20px auto 0;
 }
 
 .event-content{
@@ -725,15 +761,15 @@ pastor-description p{
   background: #EFBF04;
   border:none;
   width: 138px;
-  border-radius:20px;
+  border-radius:25px;
   margin-top:10px;
   height: 44px;
-
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #000;
+  color: #0B0C1C;
 }
 /* .event-btn {
   display: inline-block;
@@ -2123,7 +2159,21 @@ body {
   color: #0B0C1C;
   font-weight: 400;
   margin-top: 10px;
+  margin-bottom: 20px;
 
+}
+
+.prayer-desc {
+  width: 1142px;
+  height: 108px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffff;
+  margin: 16px auto 0;
 }
 
 .section-copy-center-bold {
@@ -2609,11 +2659,10 @@ body {
 }
 
 .give-qr-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  max-width: 900px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -2625,6 +2674,10 @@ body {
 .give-qr-card {
   display: flex;
   justify-content: center;
+  position: relative;
+  width: 405px;
+  height: 811px;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.15));
 }
 
 .give-qr-phone-frame {
@@ -3596,7 +3649,9 @@ body {
   }
   
   .event-content h4 {
-    font-size: 14px;
+    font-size: 18px;
+    color:"#122F4A";
+    font-weight: 700;
   }
 }
 
@@ -3855,5 +3910,30 @@ img {
   margin-top: -20px;
   margin-bottom: 30px;
   color: #333333;
+}
+
+.branches-banner-section {
+  background: linear-gradient(135deg, #0a1628, #1a2d5a);
+  padding: 22px 0;
+  margin-left: -32px;
+  margin-right: -32px;
+  width: calc(100% + 64px);
+  margin-bottom: 44px;
+}
+
+.branches-banner-content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.branches-line {
+  width: 323px;
+  height: 20px;
+  background: #EFBF04;
 }
 
