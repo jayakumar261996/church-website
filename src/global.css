@@ -2320,6 +2320,19 @@ body {
   margin: 16px auto 0;
 }
 
+.prayer-desc {
+  width: 1142px;
+  height: 108px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffff;
+  margin: 16px auto 0;
+}
+
 .section-copy-center-bold {
   text-align: center;
   max-width: 1139px;
@@ -3794,6 +3807,7 @@ body {
   }
   
   .event-content h4 {
+    
     font-size: 15px;
     color:"#122F4A";
     font-weight: 700;
