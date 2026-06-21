@@ -120,29 +120,57 @@ Ankur Narula Ministries, which is one of the fastest-growing churches in India.
           </div>
 
         <div className="schedule-banner">
-  {/* <video
+  <video
     autoPlay
     muted
     loop
     playsInline
     className="w-full h-auto"
   >
-    <source src="/videos/father-preaching.mp4" type="video/mp4" />
+    <source src="https://res.cloudinary.com/duyytaxgd/video/upload/v1782028509/father_preaching_havmua.mp4" type="video/mp4" />
     Your browser does not support the video tag.
-  </video> */}
+  </video>
 </div>
 
           <div className="schedule-grid">
             <div className="schedule-box">
-              <h5>Weekly Services</h5>
-              <p>Sunday Morning Service</p>
-              <p>10:30 AM - 2:30 PM</p>
+              <div className="schedule-header">
+                <h5>Weekly Services</h5>
+                <div className="schedule-dash"></div>
+              </div>
+              <div style={{display:"flex", justifyContent:"space-between"}}>
+                <div>
+                  <p>Sunday Morning Service</p>
+                  <p>10:30 AM – 2:30 PM (IST)</p>
+                </div>
+                <div>
+                  <p>Sunday Evening Service</p>
+                  <p>7:00 PM – 11:00 PM (IST)</p>
+                </div>
+              </div>
+              <div className="schedule-divider"></div>
+              <div className="schedule-center">
+                <p>Thursday Service</p>
+                <p>6:00 PM – 10:00 PM (IST)</p>
+              </div>
             </div>
 
             <div className="schedule-box">
-              <h5>Daily Prayer Programs</h5>
-              <p>Sunday Morning Service</p>
-              <p>10:30 AM - 2:30 PM</p>
+              <div className="schedule-header">
+                <h5>Daily Prayer Programs</h5>
+                <div className="schedule-dash"></div>
+              </div>
+               <div style={{display:"flex", justifyContent:"space-between"}}>
+                <div>
+                  <p> Everyday Manna</p>
+                  <p>1:00 PM (Daily)</p>
+                </div>
+                <div>
+                  <p> Prayer Mountain </p>
+                  <p>8:00 PM (Daily)</p>
+                </div>
+              </div>
+              <div className="schedule-divider"></div>
 
               <button className="live-btn">
                 Join Live Now
@@ -156,10 +184,22 @@ Ankur Narula Ministries, which is one of the fastest-growing churches in India.
           <p>Be a Part of Our Family</p>
 
           <div className="social-grid">
-            <div className="social-card">Facebook</div>
-            <div className="social-card">Instagram</div>
-            <div className="social-card">YouTube</div>
-            <div className="social-card">X - Twitter</div>
+            <div className="social-card facebook">
+              <img src="/img/facebook.png" alt="Facebook" className="social-icon" />
+              <span>Facebook</span>
+            </div>
+            <div className="social-card instagram">
+              <img src="/img/instagram.png" alt="Instagram" className="social-icon" />
+              <span>Instagram</span>
+            </div>
+            <div className="social-card youtube">
+              <img src="/img/youtube.png" alt="YouTube" className="social-icon" />
+              <span>YouTube</span>
+            </div>
+            <div className="social-card twitter">
+              <img src="/img/twitter.png" alt="X - Twitter" className="social-icon" />
+              <span>X - Twitter</span>
+            </div>
           </div>
         </section>
 
@@ -176,12 +216,24 @@ Ankur Narula Ministries, which is one of the fastest-growing churches in India.
         </section>
 
         <section className="events container">
-          <div className="events-grid">
-            {[1,2,1,1,1,2].map((item)=>(
-              <div className="event-card" key={item}>
-                <img src={`/img/${item}.svg`} alt={`Event ${item}`} />
+          <div className="home-events-grid">
+            {[
+              { id: "event-1", title: "PURE HEART Powerful Message by Apostle Dr.Ankur Yoseph Narula #ankurnarulaministry " },
+              { id: "event-2", title: "ALL GLORY to JESUS | MORNING WORSHIP| 22-05-2026 @AnkurNarulaMinistries " },
+              { id: "miraculous-testimony_pj7yaq", title: "परमेश्वर के दास और दासी की MIRACULOUS TESTIMONY @AnkurNarulaMinistries " },
+              { id: "living-church_b1yh3x", title: "Find a Living Church for You | अपने लिए एक जीवित चर्च खोजें #ankurnarulaministry #canada " },
+              { id: "pastors_pigkxu", title: "Pastors Imparted With the Fire of Revival Canada Crusade Day-2 #ankurnarulaministry " },
+              { id: "crusade_emlqzb", title: "ANM का आज तक का Canada का Biggest Crusade #ankurnarulaministries #apostleankuryosephnarula " }
+            ].map((item)=>(
+              <div className="event-card" key={item.id}>
+                <CloudinaryImage 
+                  src={`${item.id}.png`} 
+                  alt={item.title}
+                  width={400}
+                  className="w-full h-auto"
+                />
                 <div className="event-content">
-                  <h4>Prayer Mountain Special Prayer</h4>
+                  <h4>{item.title}</h4>
                   <button className="event-btn">
                     Watch Now
                   </button>

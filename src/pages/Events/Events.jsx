@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import CloudinaryImage from "@/components/common/CloudinaryImage";
 
 export default function Events() {
   useEffect(() => {
@@ -8,17 +9,17 @@ export default function Events() {
   }, []);
   const events = [
     {
-      image: "/img/event1.svg",
+      image: "9c4cf0e2f9397f119d80dde4d156bbaa56343330_bd6v1o",
       title: "CRUSADE",
       description: "Join us for powerful evangelistic gatherings.",
     },
     {
-      image: "/img/event2.svg",
+      image: "85761e6b2486d02d0c483eb7871b0ab19ace8c46_hjceg0",
       title: "WORSHIP NIGHT",
       description: "An evening of praise and worship.",
     },
     {
-      image: "/img/event3.svg",
+      image: "b3a0bba89e5f05b1a24ecbaec47a6c1170b270dc_dosjhy",
       title: "CONFERENCE",
       description: "Annual leadership and spiritual growth conference.",
     },
@@ -46,7 +47,7 @@ export default function Events() {
         {events.map((event, index) => (
           <div key={index} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <div className="event-card">
-              <img src={event.image} alt={event.title} />
+              <CloudinaryImage src={`${event.image}.png`} alt={event.title} width={400} className="w-full h-auto" />
             </div>
             <Link to="#" className="event-btn" style={{ marginTop: "25px" }}>Watch Now</Link>
           </div>
@@ -72,7 +73,7 @@ export default function Events() {
 
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "40px" }}>
         <div className="upcoming-event-card">
-          <img src="/img/event1.svg" alt="Upcoming Event" />
+          <CloudinaryImage src="85761e6b2486d02d0c483eb7871b0ab19ace8c46_hjceg0.png" alt="Upcoming Event" width={400} className="w-full h-auto" />
         </div>
         <Link to="#" className="event-btn" style={{ marginTop: "25px" }}>Watch Now</Link>
         <div style={{ width: "1140px", minHeight: "513px", marginTop: "40px", textAlign: "center", lineHeight: "1.8", marginBottom : "20px"}}>

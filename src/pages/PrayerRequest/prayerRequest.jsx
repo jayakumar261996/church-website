@@ -8,7 +8,7 @@ export default function PrayerRequest() {
       <div className="ministries-image my-8">
         <img src="/img/prayerRequest.svg" alt="Ministries" className="w-full h-auto" />
       </div>
-      <section className="page-events"  style={{ padding: '0.5rem 2rem 2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <section style={{ padding: '0.5rem 2rem 2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <div className="section-heading">
             <div className="gold-divider gold-divider-top">
               <img

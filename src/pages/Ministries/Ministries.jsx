@@ -126,12 +126,19 @@ const ministries = [
         
       </section>
       <div className="ministries-image my-8">
-        <img
-          src="/img/head-church.svg"
-          alt="Ministries"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-auto"
-        />
+          style={{borderRadius:"20px"}}
+        >
+          <source src="https://res.cloudinary.com/duyytaxgd/video/upload/v1782028509/father_preaching_havmua.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
+
        <section className="banner-section">
         <div className="banner-content">
           <div className="branches-line" />
@@ -142,11 +149,17 @@ const ministries = [
       </section>
 
        <div className="ministries-image my-8">
-        <img
-          src="/img/head-church.svg"
-          alt="Ministries"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-auto"
-        />
+          style={{borderRadius:"20px"}}
+        >
+          <source src="https://res.cloudinary.com/duyytaxgd/video/upload/v1782025136/2_worshipper_uxe1pr.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
         <div className="section-copy-center">
           Our Worship Team leads the church in powerful and spirit-filled praise and worship. With dedication and passion, they help create an atmosphere where everyone can encounter God, express their faith, and grow deeper in their relationship with Christ.
