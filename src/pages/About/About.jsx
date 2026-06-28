@@ -28,9 +28,9 @@ const STATS = [
 ]
 
 const LEADERS = [
-  { bg: "linear-gradient(135deg, #8B1a1a, #c0392b)", name: "Leader 1" },
-  { bg: "linear-gradient(135deg, #1a3a6b, #2980b9)", name: "Leader 2" },
-  { bg: "linear-gradient(135deg, #2d5a1a, #27ae60)", name: "Leader 3" },
+  { bg: "linear-gradient(135deg, #8B1a1a, #c0392b)", name: "Leader 1", img: "/img/leader-1.png" },
+  { bg: "linear-gradient(135deg, #1a3a6b, #2980b9)", name: "Leader 2", img: "/img/leader-2.png" },
+  { bg: "linear-gradient(135deg, #2d5a1a, #27ae60)", name: "Leader 3", img: "/img/leader-3.png" },
 ]
 
 const CRUSADE_PHOTOS = [
@@ -58,6 +58,7 @@ export default function AboutPage() {
       <Header />
 
       {/* ── ABOUT US HERO ── */}
+      <div className="about-top-wrapper">
       <section className="hero-section">
         <div className="section">
           <div className="section-heading">
@@ -91,7 +92,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── OUR IDENTITY / VISION & MISSION ── */}
-      <section className="section section-white">
+      <section className="section section-about-top">
         <div className="section">
           <div className="feature-card feature-card-identity">
             <div className="feature-card-overlay" />
@@ -117,30 +118,25 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      </div>
 
       {/* ── OUR LEADERS ── */}
       <section className="section section-white">
         <div className="section">
           <h2 className="section-title" style={{ textAlign: "center", justifyContent: "center" }}>Our Leaders</h2>
-          {/* <hr className="gold-hr" /> */}
 
           <div className="grid-3 leader-grid">
             {LEADERS.map((leader, i) => (
-              <div key={i} className="leader-card" style={{ background: leader.bg }}>
-                <div className="leader-card-overlay" />
-                <div className="leader-card-body">
-                  <div className="leader-card-icon">🧑‍💼</div>
-                  <div className="leader-card-label">Church Leader</div>
-                </div>
-                <div className="leader-card-shadow" />
+              <div key={i} className="leader-card">
+                <img src={leader.img} alt={leader.name} className="leader-card-img" />
               </div>
             ))}
           </div>
 
-          <div className="section-copy">
+          <div className="section-copy" style={{ marginBottom: "24px" }}>
             The Church of Signs and Wonders (Ankur Narula Ministries) is a fast-growing revival ministry based in Punjab, India, committed to preaching the Gospel of Jesus Christ through the power of the Holy Spirit. Founded in 2004 with just three members, the ministry has grown by God's grace into a global revival movement where cities gather weekly to worship, receive the Word, and experience healing, deliverance, and transformation.
           </div>
-          <div className="section-copy">
+          <div className="section-copy" style={{ marginBottom: "24px" }}>
             Led by Apostle Dr. Ankur Yoseph Narula and Pastor Sonia Yoseph Narula, the ministry serves millions through church services, live broadcasts, revival crusades, and the establishment of 200+ churches worldwide. With a strong team for compassion, the ministry also supports the needy through charitable initiatives and a 24/7 Prayer Call Center, offering prayer and counsel to people across all backgrounds, and daily encouragement.
           </div>
           <div className="section-copy">
@@ -158,14 +154,14 @@ export default function AboutPage() {
   src="/img/cross.svg"
   alt="Gold Divider"
   className="gold-divider-image"
-  style={{ width: "84px", height: "84px" }}
+  style={{ width: "62px", height: "62px" }}
 />
             <h2 className="section-heading-alt-title">Ministry Statistics</h2>
              <img
   src="/img/cross.svg"
   alt="Gold Divider"
   className="gold-divider-image"
-  style={{ width: "84px", height: "84px" }}
+  style={{ width: "62px", height: "62px" }}
 />
            
             <div className="section-heading-rule" />
@@ -183,35 +179,72 @@ export default function AboutPage() {
       </section>
 
       {/* ── LIVE SERVICES SCHEDULE ── */}
-      <section className="section section-white">
+      <section className="banner-section" style={{ marginTop: "60px" }}>
+        <div className="banner-content">
+          <div className="banner-rule" />
+          <p className="banner-text">Live Services Schedule</p>
+          <div className="banner-rule" />
+        </div>
+      </section>
+      <section className="section" style={{ padding: "70px 20px" }}>
         <div className="section">
-          <h2 className="section-title">Live Services Schedule</h2>
-          <hr className="gold-hr" />
 
-          <div className="grid-2 schedule-grid">
-            <div className="schedule-card schedule-card-dark">
-              <div className="schedule-card-label">Weekly Services</div>
-              <div className="schedule-list">
-                {WEEKLY_SERVICES.map((s, i) => (
-                  <div key={i} className="schedule-item">
-                    {s.split("\n").map((line, j) => <div key={j} className={j === 0 ? "schedule-item-title" : "schedule-item-detail"}>{line}</div>)}
-                  </div>
-                ))}
+          <div className="schedule-banner">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-auto"
+            >
+              <source src="https://res.cloudinary.com/duyytaxgd/video/upload/v1782028509/father_preaching_havmua.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div className="schedule-grid">
+            <div className="schedule-box">
+              <div className="schedule-header">
+                <h5>Weekly Services</h5>
+                <div className="schedule-dash"></div>
+              </div>
+              <div style={{display:"flex", justifyContent:"space-between"}}>
+                <div>
+                  <p>Sunday Morning Service</p>
+                  <p>10:30 AM – 2:30 PM (IST)</p>
+                </div>
+                <div>
+                  <p>Sunday Evening Service</p>
+                  <p>7:00 PM – 11:00 PM (IST)</p>
+                </div>
+              </div>
+              <div className="schedule-divider"></div>
+              <div className="schedule-center">
+                <p>Thursday Service</p>
+                <p>6:00 PM – 10:00 PM (IST)</p>
               </div>
             </div>
 
-            <div className="schedule-card schedule-card-light">
-              <div className="schedule-card-label schedule-card-label-inverse">Daily Prayer Programs</div>
-              <div className="schedule-list">
-                {DAILY_PRAYERS.map((s, i) => (
-                  <div key={i} className="schedule-item schedule-item-light">
-                    {s.split("\n").map((line, j) => <div key={j} className={j === 0 ? "schedule-item-title" : "schedule-item-detail"}>{line}</div>)}
-                  </div>
-                ))}
+            <div className="schedule-box">
+              <div className="schedule-header">
+                <h5>Daily Prayer Programs</h5>
+                <div className="schedule-dash"></div>
               </div>
-              <div className="button-row">
-                <button className="btn-live">Join the Live Now</button>
+               <div style={{display:"flex", justifyContent:"space-between"}}>
+                <div>
+                  <p> Everyday Manna</p>
+                  <p>1:00 PM (Daily)</p>
+                </div>
+                <div>
+                  <p> Prayer Mountain </p>
+                  <p>8:00 PM (Daily)</p>
+                </div>
               </div>
+              <div className="schedule-divider"></div>
+
+              <button className="live-btn">
+                Join Live Now
+              </button>
             </div>
           </div>
         </div>
@@ -220,22 +253,22 @@ export default function AboutPage() {
       {/* ── FAITH RESOURCES ── */}
       <section className="section section-white">
         <div className="section">
-          <div className="grid-2 faith-grid">
+          <div className="faith-grid">
             <div className="feature-card feature-card-resource">
               <div className="feature-card-overlay" />
               <div className="feature-card-icon">📖</div>
               <div className="feature-card-subtitle feature-card-subtitle-light">HOLY BIBLE</div>
             </div>
-            <div className="feature-panel">
+            <div className="feature-panel" style={{ textAlign: "left" }}>
               <h2 className="feature-panel-title">Faith Resources</h2>
-              <p className="section-copy">
+              <p className="section-copy" style={{ width: "435px" }}>
                 Explore books, teachings, and spiritual resources that will strengthen your walk with God.
               </p>
-              <NavLink to="/store">
-  <button className="btn-gold">
-    Visit the Store Now
-  </button>
-</NavLink>
+              <NavLink to="/store" style={{ transition: "none" }}>
+                <button className="btn-gold">
+                  Visit the Store Now
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -265,9 +298,15 @@ export default function AboutPage() {
       </section>
 
       {/* ── MAN OF GOD INTERNATIONAL PRESENCE ── */}
+      <section className="banner-section">
+        <div className="banner-content">
+          <div className="banner-rule" />
+          <p className="banner-text">MAN OF GOD INTERNATIONAL PRESENCE</p>
+          <div className="banner-rule" />
+        </div>
+      </section>
       <section className="section section-white">
         <div className="section">
-          <h2 className="section-title section-title-uppercase">MAN OF GOD INTERNATIONAL PRESENCE</h2>
           <div className="grid-4 presence-grid">
             {PRESENCE_PHOTOS.slice(0, 4).map((photo, i) => (
               <div key={i} className="presence-card" style={{ background: photo.bg }}>
