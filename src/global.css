@@ -692,6 +692,12 @@ pastor-description p{
   display:block;
 }
 
+.faith-grid {
+  display: flex;
+  gap: 40px;
+
+}
+
 /* SOCIAL */
 
 .social{
@@ -1267,13 +1273,22 @@ body {
   overflow-x: hidden;
 }
 
+.about-top-wrapper {
+  background: #FFFFE9;
+}
+
+.section-about-top {
+  background: transparent;
+  padding: 50px 20px;
+}
+
 .section {
   max-width: 100%;
   margin: 0 auto;
 }
 
 .hero-section {
-  background: linear-gradient(180deg, #f8f4e8 0%, #fff8e7 90%);
+  background: #FFFFE9;
   padding: 50px 20px 40px;
   text-align: center;
 }
@@ -1281,6 +1296,12 @@ body {
 .section-white {
   background: #fff;
   padding: 50px 20px;
+}
+
+.section-white > .section {
+  max-width: 1139px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-light {
@@ -1297,6 +1318,10 @@ body {
 .section-heading {
   text-align: center;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .section-heading p {
@@ -1365,13 +1390,12 @@ body {
 }
 
 .section-title-uppercase {
-  font-family: 'Cinzel', serif;
-  font-size: 18px;
-  font-weight: 700;
+  font-family: 'Poppins', serif;
+  font-size: 28px;
+  font-weight: 500;
   color: #003080;
   text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  line-height: 100%;
   margin-bottom: 24px;
 }
 
@@ -1575,9 +1599,32 @@ body {
 }
 
 .feature-card-identity,
+.feature-card-identity {
+  background: linear-gradient(135deg, #0d1f4a, #1a3a6b, #0d1f4a);
+  color: #fff;
+  width: 754px;
+  height: 214px;
+  margin: 0 auto;
+  border-radius: 44px;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px 40px;
+  position: relative;
+  z-index: 2;
+}
+
 .feature-card-resource {
   background: linear-gradient(135deg, #0d1f4a, #1a3a6b, #0d1f4a);
   color: #fff;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px 40px;
+  position: relative;
+  z-index: 2;
 }
 
 .feature-card-overlay {
@@ -1597,8 +1644,9 @@ body {
 }
 
 .feature-card-subtitle {
-  color: #122F4A;
+  color: #FFFFFF;
   max-width: 300px;
+  margin: 0 auto;
 }
 
 .feature-card-subtitle-light {
@@ -1608,10 +1656,12 @@ body {
 .feature-card-title {
   position: relative;
   z-index: 1;
-  font-family: 'Cinzel', serif;
+  font-family: 'Poppins', serif;
   font-size: 22px;
   font-weight: 700;
-  color: #FFD700;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .feature-card-icon {
@@ -1634,38 +1684,81 @@ body {
   margin-bottom: 14px;
 }
 
+.vision-grid-wrapper {
+  background: #fff;
+  border-radius: 44px;
+  padding: 60px 40px 20px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  width: 1139px;
+  height: 430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .vision-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  max-width: 754px;
+  gap: 40px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .vision-title {
-  font-family: 'Cinzel', serif;
-  font-size: 18px;
+  font-family: 'Poppins', serif;
+  font-size: 20px;
   font-weight: 700;
   color: #003080;
   margin-bottom: 14px;
   border-bottom: 3px solid #D4A017;
   padding-bottom: 8px;
   display: inline-block;
+  text-align: left;
 }
 
 .leader-grid {
   margin-bottom: 36px;
+  display: flex !important;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  grid-template-columns: unset !important;
 }
 
 .leader-card {
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
-  height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   cursor: pointer;
+  flex-shrink: 0;
+}
+
+.leader-grid .leader-card:nth-child(1),
+.leader-grid .leader-card:nth-child(3) {
+  width: 305px;
+  height: 429px;
+  margin-top: 70px;
+}
+
+.leader-grid .leader-card:nth-child(2) {
+  width: 305px;
+  height: 509px;
+  margin-top: 30px;
+}
+
+.leader-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .leader-card-overlay,
@@ -1705,22 +1798,41 @@ body {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 0;
 }
 
 .stat-card {
   text-align: center;
-  padding: 30px 20px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,215,0,0.2);
+  padding: 30px 4px;
   cursor: default;
+}
+
+.stat-card:first-child {
+  text-align: right;
+  padding-right: 6px;
+  padding-left: 40px;
+}
+
+.stat-card:not(:first-child):not(:last-child) {
+  text-align: center;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.stat-card:last-child {
+  text-align: left;
+  padding-left: 6px;
+  padding-right: 40px;
+}
+
+.stat-card:not(:last-child) {
+  border-right: 1px solid rgba(255,255,255,0.2);
 }
 
 .stat-card-value {
   font-family: 'Poppins', serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
   background: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1731,6 +1843,7 @@ body {
   color: #FFFFFF;
   font-size: 24px;
   letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .schedule-card {
@@ -1818,7 +1931,8 @@ body {
   font-family: 'Poppins', serif;
   font-size: 28px;
   font-weight: 500;
-  
+  line-height: 100%;
+  text-align: center;
 }
 .ministries-image {
   width: 100%;
@@ -2208,13 +2322,6 @@ body {
   font-weight: 600;
   cursor: pointer;
   font-size: 18px;
- 
-
-}
-
-.btn-gold:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(212,160,23,0.4);
 }
 
 .btn-outline {
