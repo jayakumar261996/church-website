@@ -105,13 +105,17 @@ export default function AboutPage() {
               <div>
                 <h3 className="vision-title">Our Vision</h3>
                 <p className="section-copy">
-                  "No one soul made aware!" – The ministry aims to see a global revival of faith, leading people through the transformative power of Jesus Christ, proclaiming the kingdom of God with signs and wonders following, until every nation has heard the Gospel.
+                  "Not one soul would be lost" - The ministry aims
+to see a global revival of faith, hope, and love 
+through the transformative power of Jesus Christ.
                 </p>
               </div>
               <div>
                 <h3 className="vision-title">Our Mission</h3>
                 <p className="section-copy">
-                  Spreading the Gospel of Jesus Christ, leading people into a deep relationship with God, and demonstrating His power through healing, deliverance, and transformation — reaching the broken, the lost, and the hopeless with the love of Christ.
+                Spreading the Gospel of Jesus Christ. Leading people into
+a personal relationship with God. Demonstrating His
+power through healing, deliverance, and transformation.
                 </p>
               </div>
             </div>

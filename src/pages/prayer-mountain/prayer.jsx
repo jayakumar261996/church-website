@@ -61,7 +61,7 @@ export default function Prayer() {
             </div>
 
           </div>
-         <div className="section-copy-center">
+         <div className="section-copy-center" style={{marginTop: "-20px"}}>
   The Prayer Mountain is a sacred place dedicated to prayer, meditation, and spiritual renewal. It is where believers gather to
  seek God's presence, intercede for their needs, and grow in faith. Here, individuals can experience deep encounters with 
 God and leave spiritually rejuvenated.
