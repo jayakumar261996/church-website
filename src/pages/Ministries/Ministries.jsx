@@ -43,7 +43,7 @@ const ministries = [
     image: "/img/branches-churches.png",
     title: "MULTIMEDIA COLLEGE",
     description: "A peaceful place for prayer, fasting, and spiritual retreat",
-    href: "/multimedia-college",
+    href: "/multi-media",
   },
 ];
   return (

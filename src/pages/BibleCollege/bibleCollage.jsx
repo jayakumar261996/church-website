@@ -1,9 +1,5 @@
-
-
-
-
-
-
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const books = [
   {
@@ -29,9 +25,23 @@ const books = [
 
 
 export default function BibleCollege() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    const layout = document.querySelector(".app-layout");
+    if (layout) {
+      layout.style.background =
+        "linear-gradient(to bottom, #FFFFE9 0, #FFFFE9 436.671875px, transparent 436.671875px)";
+    }
+    return () => {
+      if (layout) {
+        layout.style.background = "";
+      }
+    };
+  }, []);
+
   return (
-    <section className="page-ministries p-8 prayer-mountain-bg">
-     
+    <section className="page-ministries p-8">
+      
       <div className="section-heading">
             <div className="gold-divider gold-divider-top">
               <img
@@ -40,7 +50,7 @@ export default function BibleCollege() {
   className="gold-divider-image"
   style={{ width: "62px", height: "62px" }}
 />
-              <h1 className="hero-title">PRAYER MOUNTAIN</h1>
+              <h1 className="hero-title">BIBLE COLLEGE</h1>
               {/* <span className="gold-cross">✝</span> */}
              <img
   src="/img/cross.svg"
@@ -51,89 +61,73 @@ export default function BibleCollege() {
             </div>
 
           </div>
-           <div className="section-copy-center">
-  The Prayer Mountain is a sacred place dedicated to prayer, meditation, and spiritual renewal. It is where believers gather to
- seek God's presence, intercede for their needs, and grow in faith. Here, individuals can experience deep encounters with 
-God and leave spiritually rejuvenated.
+         <div className="section-copy-center" style={{ marginTop: "-30px" }}>
+ Welcome to a place where the Word of God comes alive and transforms lives from within. Here, you will be grounded in truth, 
+strengthened in faith, and equipped with spiritual wisdom to walk in God’s purpose. Through dedicated teaching, 
+revelation, and guidance, you will grow deeper in your relationship with Christ and discover the power of His Word working in
+your life. This is more than learning—it is a journey of becoming who God has called you to be.
           </div>
 
-           <div className="section-copy-center-bold">
- A consecrated place to seek God—daily at 8:00 PM we gather in expectation of His presence.
+           <div className="section-copy-center-bold" style={{ fontWeight: "400" }}>
+Equipping believers with the Word of God to walk in truth, power, and purpose.
           </div>
 
 
 
-       <section className="banner-section">
-        <div className="banner-content">
-          <div className="banner-rule" />
-          <p className="banner-text">SCENES OF PRAYER MOUNTAIN</p>
-          <div className="banner-rule" />
+       <section className="branches-banner-section">
+        <div className="branches-banner-content">
+          <div className="branches-line"></div>
+          <p className="banner-text">SCENES OF BIBLE COLLEGE</p>
+           <div className="branches-line"></div>
         </div>
       </section>
 
-       <div className="ministries-image my-8">
-        <img
-          src="/img/map.png"
-          alt="Ministries"
-          className="w-full h-auto radius-xl"
-        />
+       <div style={{
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "16px",
+        margin: "2rem 0",
+        overflow: "hidden",
+        maxHeight: "456px"
+      }}>
+        <img src="/img/prayer-mountain-1.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+        <img src="/img/prayer-mountain-2.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+        <img src="/img/prayer-mountain-3.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+        <img src="/img/prayer-mountain-4.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+        <img src="/img/prayer-mountain-5.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+        <img src="/img/prayer-mountain-6.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+        <img src="/img/prayer-mountain-7.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+        <img src="/img/prayer-mountain-8.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+        <img src="/img/prayer-mountain-9.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+        <img src="/img/prayer-mountain-10.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
       </div>
 
-      <section className="banner-section">
-        <div className="banner-content">
-          <div className="banner-rule" />
+      <section className="branches-banner-section">
+        <div className="branches-banner-content">
+          <div className="branches-line"></div>
           <p className="banner-text">What is Prayer Mountain?</p>
-          <div className="banner-rule" />
+          <div className="branches-line"></div>
           
         </div>
-         <div className="section-copy-center">
-   Ankur Narula Ministries (The Church of Signs and Wonders) is the biggest and fastest growing church ministry in Punjab, India. Apostle Ankur Yoseph Narula is the Senior Pastor and Overseer in The Church of Signs and Wonders. The Church has become a channel of Salvation for India. Every Thursday and Sunday, our live services are broadcasted to millions around the globe through Anugrah TV, and the church is always filled more than capacity with overflows of people sitting outside the church on the roads and the empty plots. The church has become the biggest congregation of more than 300,000 people attending weekly services in The Church of Signs and Wonders.
+         <div className="prayer-desc">
+   The Prayer Mountain is a sacred place dedicated to prayer, meditation, and spiritual renewal. It is where believers gather to seek God's presence, intercede for their needs, and grow in faith. Here, individuals can experience deep encounters with God and leave spiritually rejuvenated.
+          </div>
+
+      </section>
+
+       <section className="branches-banner-section">
+        <div className="branches-banner-content">
+          <div className="branches-line"></div>
+          <p className="banner-text">Purpose & vision</p>
+          <div className="branches-line"></div>
+          
+        </div>
+        <div className="prayer-desc">
+ PThe purpose of Prayer Mountain is to provide a quiet, holy space where believers can seek God's direction, receive healing, and find peace in the midst of life's challenges. Our vision is to make it a place where individuals and families connect with God on a deeper level, and where the ministry can pray for the needs of the community.
           </div>
         
 
       </section>
-
-       <section className="banner-section">
-        <div className="banner-content">
-          <div className="banner-rule" />
-          <p className="banner-text">What is Prayer Mountain?</p>
-          <div className="banner-rule" />
-          
-        </div>
-         <div className="section-copy-center">
-   Ankur Narula Ministries (The Church of Signs and Wonders) is the biggest and fastest growing church ministry in Punjab, India. Apostle Ankur Yoseph Narula is the Senior Pastor and Overseer in The Church of Signs and Wonders. The Church has become a channel of Salvation for India. Every Thursday and Sunday, our live services are broadcasted to millions around the globe through Anugrah TV, and the church is always filled more than capacity with overflows of people sitting outside the church on the roads and the empty plots. The church has become the biggest congregation of more than 300,000 people attending weekly services in The Church of Signs and Wonders.
-          </div>
-        
-
-      </section>
-
-       <section className="banner-section">
-        <div className="banner-content">
-          <div className="banner-rule" />
-          <p className="banner-text">TESTIMONIES FOR GODS GLORY</p>
-          <div className="banner-rule" />
-          
-        </div>
-         
-
-      </section>
-
-
-
-       <section className="banner-section">
-        <div className="banner-content">
-          <div className="banner-rule" />
-          <p className="banner-text">JOIN US IN PRAYERS</p>
-          <div className="banner-rule" />
-          
-        </div>
-         
-
-      </section>
-
-
-
-
 
     </section>
   );
