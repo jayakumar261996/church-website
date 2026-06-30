@@ -101,33 +101,64 @@ Empowering the next generation to walk in faith, truth, and the power of God.
         <img src="/img/prayer-mountain-10.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
       </div>
 
-      <section className="branches-banner-section">
-        <div className="branches-banner-content">
-          <div className="branches-line"></div>
-          <p className="banner-text">What is Sunday School?</p>
-          <div className="branches-line"></div>
-          
-        </div>
-         <div className="prayer-desc">
-    Sunday School is a dedicated time of learning and spiritual growth where children, youth, and adults are taught the Word of God in a simple and meaningful way. It is designed to help believers understand Bible stories, Christian values, and the love of Jesus Christ in a way that is easy to apply in daily life. Through teaching, activities, and fellowship, Sunday School builds a strong foundation of faith from an early age.
-          </div>
+      <div style={{
+        width: "1140px",
+        height: "238px",
+        borderRadius: "40px",
+        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
+        margin: "0 auto 44px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "30px 60px",
+        boxSizing: "border-box",
+        opacity: 1
+      }}>
+        <p className="banner-text" style={{ marginBottom: "16px" }}>What is Sophia College?</p>
+        <p style={{
+          textAlign: "center",
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: 400,
+          fontSize: "18px",
+          lineHeight: "1.6",
+          color: "#ffffff",
+          margin: 0,
+          maxWidth: "900px"
+        }}>
+          Sunday School is a dedicated time of learning and spiritual growth where children, youth, and adults are taught the Word of God in a simple and meaningful way. It is designed to help believers understand Bible stories, Christian values, and the love of Jesus Christ in a way that is easy to apply in daily life. Through teaching, activities, and fellowship, Sunday School builds a strong foundation of faith from an early age.
+        </p>
+      </div>
 
-      </section>
-
-       <section className="branches-banner-section">
-        <div className="branches-banner-content">
-          <div className="branches-line"></div>
-          <p className="banner-text">Purpose & vision</p>
-          <div className="branches-line"></div>
-          
-        </div>
-        <div className="prayer-desc">
-       The purpose of Sunday School is to nurture spiritual growth through Bible-based teaching, helping individuals develop a personal relationship with God. It focuses on building strong moral values, prayer life, and understanding of Scripture in a practical and engaging way.
-Our vision is to raise a generation rooted in God’s Word, filled with the knowledge of Jesus Christ, and guided by the Holy Spirit. We aim to prepare children and believers of all ages to live out their faith boldly, grow in godly character, and become light in their families, schools, and communities
-          </div>
-        
-
-      </section>
+      <div style={{
+        width: "1140px",
+        height: "238px",
+        borderRadius: "40px",
+        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
+        margin: "0 auto 44px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "30px 60px",
+        boxSizing: "border-box",
+        opacity: 1
+      }}>
+        <p className="banner-text" style={{ marginBottom: "16px" }}>Purpose & Vision</p>
+        <p style={{
+          textAlign: "center",
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: 400,
+          fontSize: "18px",
+          lineHeight: "1.6",
+          color: "#ffffff",
+          margin: 0,
+          maxWidth: "900px"
+        }}>
+          The purpose of Sunday School is to nurture spiritual growth through Bible-based teaching, helping individuals develop a personal relationship with God. It focuses on building strong moral values, prayer life, and understanding of Scripture in a practical and engaging way.
+          Our vision is to raise a generation rooted in God's Word, filled with the knowledge of Jesus Christ, and guided by the Holy Spirit. We aim to prepare children and believers of all ages to live out their faith boldly, grow in godly character, and become light in their families, schools, and communities.
+        </p>
+      </div>
 
     </section>
   );

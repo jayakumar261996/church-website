@@ -102,32 +102,63 @@ Equipping believers with the Word of God to walk in truth, power, and purpose.
         <img src="/img/prayer-mountain-10.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
       </div>
 
-      <section className="branches-banner-section">
-        <div className="branches-banner-content">
-          <div className="branches-line"></div>
-          <p className="banner-text">What is Prayer Mountain?</p>
-          <div className="branches-line"></div>
-          
-        </div>
-         <div className="prayer-desc">
-   The Prayer Mountain is a sacred place dedicated to prayer, meditation, and spiritual renewal. It is where believers gather to seek God's presence, intercede for their needs, and grow in faith. Here, individuals can experience deep encounters with God and leave spiritually rejuvenated.
-          </div>
+      <div style={{
+        width: "1140px",
+        height: "238px",
+        borderRadius: "40px",
+        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
+        margin: "0 auto 44px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "30px 60px",
+        boxSizing: "border-box",
+        opacity: 1
+      }}>
+        <p className="banner-text" style={{ marginBottom: "16px" }}>What is Bible College?</p>
+        <p style={{
+          textAlign: "center",
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: 400,
+          fontSize: "18px",
+          lineHeight: "1.6",
+          color: "#ffffff",
+          margin: 0,
+          maxWidth: "900px"
+        }}>
+          The Prayer Mountain is a sacred place dedicated to prayer, meditation, and spiritual renewal. It is where believers gather to seek God's presence, intercede for their needs, and grow in faith. Here, individuals can experience deep encounters with God and leave spiritually rejuvenated.
+        </p>
+      </div>
 
-      </section>
-
-       <section className="branches-banner-section">
-        <div className="branches-banner-content">
-          <div className="branches-line"></div>
-          <p className="banner-text">Purpose & vision</p>
-          <div className="branches-line"></div>
-          
-        </div>
-        <div className="prayer-desc">
- PThe purpose of Prayer Mountain is to provide a quiet, holy space where believers can seek God's direction, receive healing, and find peace in the midst of life's challenges. Our vision is to make it a place where individuals and families connect with God on a deeper level, and where the ministry can pray for the needs of the community.
-          </div>
-        
-
-      </section>
+      <div style={{
+        width: "1140px",
+        height: "238px",
+        borderRadius: "40px",
+        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
+        margin: "0 auto 44px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "30px 60px",
+        boxSizing: "border-box",
+        opacity: 1
+      }}>
+        <p className="banner-text" style={{ marginBottom: "16px" }}>Purpose & Vision</p>
+        <p style={{
+          textAlign: "center",
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: 400,
+          fontSize: "18px",
+          lineHeight: "1.6",
+          color: "#ffffff",
+          margin: 0,
+          maxWidth: "900px"
+        }}>
+          The purpose of Prayer Mountain is to provide a quiet, holy space where believers can seek God's direction, receive healing, and find peace in the midst of life's challenges. Our vision is to make it a place where individuals and families connect with God on a deeper level, and where the ministry can pray for the needs of the community.
+        </p>
+      </div>
 
     </section>
   );

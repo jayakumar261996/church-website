@@ -102,32 +102,63 @@ Encounter God. Experience Healing. Walk in His Presence.
         <img src="/img/prayer-mountain-10.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
       </div>
 
-      <section className="branches-banner-section">
-        <div className="branches-banner-content">
-          <div className="branches-line"></div>
-          <p className="banner-text">What is Prayer House?</p>
-          <div className="branches-line"></div>
-          
-        </div>
-         <div className="prayer-desc">
-   Prayer House is a sacred space dedicated to prayer, worship, and spiritual renewal. It is a place where believers gather to seek God’s presence, lift up their needs, and grow deeper in faith. Here, individuals and families can encounter God intimately and experience peace, restoration, and encouragement in their spiritual journey.
-          </div>
+      <div style={{
+        width: "1140px",
+        height: "238px",
+        borderRadius: "40px",
+        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
+        margin: "0 auto 44px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "30px 60px",
+        boxSizing: "border-box",
+        opacity: 1
+      }}>
+        <p className="banner-text" style={{ marginBottom: "16px" }}>What is Prayer House?</p>
+        <p style={{
+          textAlign: "center",
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: 400,
+          fontSize: "18px",
+          lineHeight: "1.6",
+          color: "#ffffff",
+          margin: 0,
+          maxWidth: "900px"
+        }}>
+          Prayer House is a sacred space dedicated to prayer, worship, and spiritual renewal. It is a place where believers gather to seek God's presence, lift up their needs, and grow deeper in faith. Here, individuals and families can encounter God intimately and experience peace, restoration, and encouragement in their spiritual journey.
+        </p>
+      </div>
 
-      </section>
-
-       <section className="branches-banner-section">
-        <div className="branches-banner-content">
-          <div className="branches-line"></div>
-          <p className="banner-text">Purpose & vision</p>
-          <div className="branches-line"></div>
-          
-        </div>
-        <div className="prayer-desc">
-      The purpose of Prayer House is to provide a peaceful, holy environment where people can come aside from daily distractions and connect with God. Our vision is to build a strong prayer community where lives are transformed, faith is strengthened, and hearts are aligned with God’s will. It is a place where continuous prayer is offered for individuals, families, and the needs of the community.
-          </div>
-        
-
-      </section>
+      <div style={{
+        width: "1140px",
+        height: "238px",
+        borderRadius: "40px",
+        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
+        margin: "0 auto 44px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "30px 60px",
+        boxSizing: "border-box",
+        opacity: 1
+      }}>
+        <p className="banner-text" style={{ marginBottom: "16px" }}>Purpose & Vision</p>
+        <p style={{
+          textAlign: "center",
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: 400,
+          fontSize: "18px",
+          lineHeight: "1.6",
+          color: "#ffffff",
+          margin: 0,
+          maxWidth: "900px"
+        }}>
+          The purpose of Prayer House is to provide a peaceful, holy environment where people can come aside from daily distractions and connect with God. Our vision is to build a strong prayer community where lives are transformed, faith is strengthened, and hearts are aligned with God's will. It is a place where continuous prayer is offered for individuals, families, and the needs of the community.
+        </p>
+      </div>
 
     </section>
   );
