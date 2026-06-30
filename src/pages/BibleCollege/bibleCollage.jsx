@@ -127,7 +127,7 @@ Equipping believers with the Word of God to walk in truth, power, and purpose.
           margin: 0,
           maxWidth: "900px"
         }}>
-          The Prayer Mountain is a sacred place dedicated to prayer, meditation, and spiritual renewal. It is where believers gather to seek God's presence, intercede for their needs, and grow in faith. Here, individuals can experience deep encounters with God and leave spiritually rejuvenated.
+ Bible College is a dedicated place of learning where individuals are trained in the Word of God, spiritual disciplines, and Christian leadership. It is designed to equip believers with a deeper understanding of Scripture, helping them grow in faith, wisdom, and maturity. Here, students are nurtured to live out God’s calling and serve effectively in ministry and everyday life.
         </p>
       </div>
 
@@ -156,7 +156,7 @@ Equipping believers with the Word of God to walk in truth, power, and purpose.
           margin: 0,
           maxWidth: "900px"
         }}>
-          The purpose of Prayer Mountain is to provide a quiet, holy space where believers can seek God's direction, receive healing, and find peace in the midst of life's challenges. Our vision is to make it a place where individuals and families connect with God on a deeper level, and where the ministry can pray for the needs of the community.
+ The purpose of Bible College is to provide sound biblical teaching and practical training for spiritual growth and ministry. Our vision is to raise strong, grounded believers who are rooted in God’s Word, led by the Holy Spirit, and prepared to impact their communities. We aim to develop leaders who carry truth, integrity, and a heart for service.
         </p>
       </div>
 

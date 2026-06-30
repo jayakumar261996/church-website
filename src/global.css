@@ -2922,7 +2922,7 @@ body {
 /* QR Code Section */
 .give-qr-section {
   background: #fff;
-  padding: 40px 20px 60px;
+  padding: 20px 20px 20px;
 }
 
 
@@ -2930,7 +2930,7 @@ body {
 /* QR Code Section */
 .give-qr-section {
   background: #fff;
-  padding: 40px 20px 60px;
+  padding: 20px 20px 20px;
 }
 
 .give-section-title {
@@ -2962,8 +2962,9 @@ body {
   justify-content: center;
   position: relative;
   width: 405px;
-  height: 811px;
+  height: 810.96px;
   filter: drop-shadow(0 10px 30px rgba(0,0,0,0.15));
+  opacity: 1;
 }
 
 .give-qr-phone-frame {
@@ -3182,10 +3183,11 @@ body {
 }
 
 .give-banks-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -3217,12 +3219,16 @@ body {
 }
 
 .give-bank-card {
-  border: 1px solid #e0e0e0;
+  width: 367px;
+  height: 248px;
+  border: 1px solid #961013;
   border-radius: 12px;
-  padding: 24px 20px;
+  padding: 16px 20px;
   text-align: center;
   background: #fff;
   transition: box-shadow 0.3s;
+  box-sizing: border-box;
+  opacity: 1;
 }
 
 .give-bank-card:hover {
@@ -3243,8 +3249,10 @@ body {
 
 .give-bank-row {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   margin-bottom: 12px;
 }
 
