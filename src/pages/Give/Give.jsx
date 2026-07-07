@@ -54,16 +54,40 @@ image: '/img/iPhone XR.svg'
 ];
 
 return ( <div className="give-page">
-{/* Hero Section */} <section className="give-hero"> <div className="give-hero-content"> <h1 className="give-title">
+{/* Hero Section */} <section className="give-hero"> <div className="give-hero-content"> <h1 className="give-title" style={{ marginTop: "-30px" }}>
 Give your Tithe & Offerings to the Lord </h1>
 
 
-      <p className="give-verse">
+      <p className="give-verse" style={{
+        width: "747px",
+        height: "90px",
+        margin: "0 auto",
+        fontFamily: "Poppins",
+        fontWeight: 400,
+        fontStyle: "normal",
+        fontSize: "20px",
+        lineHeight: "1.5",
+        letterSpacing: "0%",
+        textAlign: "center",
+        color: "#333333"
+      }}>
         The Bible says, 'Give, and it shall be given unto you' (Luke 6:38).
         In God's Kingdom, giving is a seed that brings a multiplied harvest.
       </p>
 
-      <p className="give-description">
+      <p className="give-description" style={{
+        width: "732px",
+        height: "150px",
+        margin: "0 auto",
+        fontFamily: "Poppins",
+        fontWeight: 400,
+        fontStyle: "normal",
+        fontSize: "20px",
+        lineHeight: "1.5",
+        letterSpacing: "0%",
+        textAlign: "center",
+        color: "#333333"
+      }}>
         At Ankur Narula Ministries, your tithes, offerings, and seeds are
         used for God's kingdom—spreading the Gospel, building the house of
         God, restoring broken families, and helping the poor, widows, and
@@ -73,12 +97,12 @@ Give your Tithe & Offerings to the Lord </h1>
   </section>
 
   {/* QR Code Section */}
-  <section className="give-qr-section">
+  <section className="give-qr-section" style={{ marginTop: "-60px" }}>
     <h2 className="give-section-title">
       Scan QR Code For Tithes & Offerings
     </h2>
 
-    <div className="give-qr-grid">
+    <div className="give-qr-grid" style={{ marginTop: "-60px" }}>
       {qrCodes.map((qr, index) => (
         <div key={index} className="give-qr-card">
           <img
@@ -93,7 +117,7 @@ Give your Tithe & Offerings to the Lord </h1>
   </section>
 
   {/* Bank Details Section */}
-  <section className="give-banks-section">
+  <section className="give-banks-section" style={{ marginTop: "-140px" }}>
     <div className="give-banks-divider">
       <div className="give-banks-line"></div>
       <h2 className="give-banks-title">

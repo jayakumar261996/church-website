@@ -25,8 +25,8 @@ export default function Footer() {
               <p className="footer-text">Phone: 0181-520-7777</p>
               <h3 className="footer-heading footer-heading--spaced">Links</h3>
               <div className="footer-links">
-                <a href="#" className="footer-link">Privacy Policy</a>
-                <a href="#" className="footer-link">Terms and Conditions</a>
+                <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
+                <a href="/terms" className="footer-link">Terms and Conditions</a>
               </div>
             </div>
 

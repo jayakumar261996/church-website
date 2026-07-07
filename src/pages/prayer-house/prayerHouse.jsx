@@ -82,24 +82,26 @@ Encounter God. Experience Healing. Walk in His Presence.
         </div>
       </section>
 
-       <div style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "16px",
-        margin: "2rem 0",
-        overflow: "hidden",
-        maxHeight: "456px"
-      }}>
-        <img src="/img/prayer-mountain-1.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
-        <img src="/img/prayer-mountain-2.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
-        <img src="/img/prayer-mountain-3.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
-        <img src="/img/prayer-mountain-4.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
-        <img src="/img/prayer-mountain-5.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
-        <img src="/img/prayer-mountain-6.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
-        <img src="/img/prayer-mountain-7.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
-        <img src="/img/prayer-mountain-8.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
-        <img src="/img/prayer-mountain-9.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
-        <img src="/img/prayer-mountain-10.jpg" alt="Prayer Mountain" style={{ width: "367px", height: "220px", objectFit: "cover", borderRadius: "8px", flexShrink: 0 }} />
+      <div className="space-y-8 py-8 overflow-hidden">
+        {[
+          ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389727/prayerhouse-1_twqkfv.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389728/prayerhouse-2_enh4lv.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389730/prayerhouse-3_bdeufj.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389728/prayerhouse-4_r0xixr.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389731/prayerhouse-5_izam94.png"],
+          ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389729/prayerhouse-6_oqplfz.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389729/prayerhouse-7_yjaz9v.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389731/prayerhouse-8_eoz771.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389731/prayerhouse-9_sjfkg2.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389731/prayerhouse-5_izam94.png"]
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="flex gap-4 overflow-x-auto scroll-smooth snap-x px-[10%]
+                       [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
+            {row.map((src, j) => (
+              <img
+                key={j}
+                src={src}
+                alt="Prayer House"
+                className="h-56 w-[22%] flex-shrink-0 rounded-md object-cover snap-start"
+              />
+            ))}
+          </div>
+        ))}
       </div>
 
       <div style={{
