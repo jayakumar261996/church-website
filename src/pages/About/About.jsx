@@ -309,30 +309,27 @@ power through healing, deliverance, and transformation.
           <div className="banner-rule" />
         </div>
       </section>
-      <section className="section section-white">
-        <div className="section">
-          <div className="grid-4 presence-grid">
-            {PRESENCE_PHOTOS.slice(0, 4).map((photo, i) => (
-              <div key={i} className="presence-card" style={{ background: photo.bg }}>
-                <span className="presence-card-icon">🌍</span>
-              </div>
+      <div className="space-y-8 py-8 overflow-hidden">
+        {[
+          ["/img/prayer-mountain-1.jpg", "/img/prayer-mountain-2.jpg", "/img/prayer-mountain-3.jpg", "/img/prayer-mountain-4.jpg", "/img/prayer-mountain-5.jpg"],
+          ["/img/prayer-mountain-6.jpg", "/img/prayer-mountain-7.jpg", "/img/prayer-mountain-8.jpg", "/img/prayer-mountain-9.jpg", "/img/prayer-mountain-10.jpg"]
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="flex gap-4 overflow-x-auto scroll-smooth snap-x px-[10%]
+                       [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
+            {row.map((src, j) => (
+              <img
+                key={j}
+                src={src}
+                alt="Man of God"
+                className="h-56 w-[22%] flex-shrink-0 rounded-md object-cover snap-start"
+              />
             ))}
           </div>
-          <div className="grid-4 presence-grid">
-            {PRESENCE_PHOTOS.slice(4).map((photo, i) => (
-              <div key={i} className="presence-card" style={{ background: photo.bg }}>
-                {i === 3
-                  ? <div className="presence-card-badge">
-                      <div className="presence-card-badge-title">HONORARY DOCTORATE DEGREE</div>
-                      <div className="presence-card-badge-icon">🎓</div>
-                    </div>
-                  : <span className="presence-card-icon">🌍</span>
-                }
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
 
       {/* ── FOOTER ── */}
       <Footer />

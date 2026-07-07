@@ -19,6 +19,8 @@ import SundaySchool from '@/pages/SundaySchool/sundaySchool'
 import Multimedia from '@/pages/multimediaInstitute/multimedia'
 import Testimonials from '@/pages/testimonials/testimonials'
 import Testimonial2 from '@/pages/testimonials/testimonial-2'
+import TermsPage from '@/pages/terms/terms'
+import PrivacyPolicy from '@/pages/privacypolicy/privacy'
 // import StorePage from '@/pages/Store/store' // Import the Store page component
 
 export default function AppRoutes() {
@@ -45,6 +47,8 @@ export default function AppRoutes() {
            <Route path="multi-media" element={<Multimedia />} />
            <Route path="testimonials" element={<Testimonials />} />
              <Route path="testimonial-2" element={<Testimonial2 />} />
+             <Route path="terms" element={<TermsPage />} />
+             <Route path="privacy-policy" element={<PrivacyPolicy />} />
 
           
           
