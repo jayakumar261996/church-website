@@ -121,21 +121,25 @@ Give your Tithe & Offerings to the Lord </h1>
     <div className="give-banks-divider">
       <div className="give-banks-line"></div>
       <h2 className="give-banks-title">
-        YOU CAN SEND OFFERING THROUGH WITH ALL THESE BANKS
+        YOU CAN SEND OFFERING THROUGH WITH ALL <br /> THESE BANKS
       </h2>
       <div className="give-banks-line"></div>
     </div>
 
     <div className="give-banks-grid">
       {bankDetails.map((bank, index) => (
-        <div key={index} className="give-bank-card">
+        <div key={index} className="give-bank-card" style={bank.name === 'Axis Bank' ? { borderColor: '#840000' } : bank.name === 'HDFC Bank' ? { borderColor: '#11328A' } : bank.name === 'ICICI Bank' ? { borderColor: '#FC8C06' } : {}}>
           <div
             className="give-bank-logo"
             style={{ color: bank.logoColor }}
           >
             {bank.name === 'ICICI Bank' && (
               <span className="bank-logo-icici">
-                <span className="icici-i">i</span>ICICI Bank
+                <img
+                  src="/img/icici.svg"
+                  alt="ICICI Bank Logo"
+                  className="icici-logo-image"
+                />
               </span>
             )}
 
@@ -151,30 +155,30 @@ Give your Tithe & Offerings to the Lord </h1>
             )}
 
             {bank.name === 'HDFC Bank' && (
-              <span className="bank-logo-hdfc">{bank.logo}</span>
+              <span className="bank-logo-hdfc"></span>
             )}
           </div>
 
           <div className="give-bank-details">
-            <div className="give-bank-row" style={{ flexDirection: "column", alignItems: "center", gap: "2px", marginBottom: "10px" }}>
+            <div className="give-bank-row" style={{ flexDirection: "column", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
               <span className="give-bank-label" style={{ fontFamily: "Poppins", fontWeight: 700, fontSize: "18px", lineHeight: "100%", letterSpacing: "0%", textAlign: "center", color: "#1a2d5a" }}>A/C HOLDER NAME</span>
               <span className="give-bank-value" style={{ fontFamily: "Poppins", fontWeight: 400, fontSize: "16px", lineHeight: "100%", letterSpacing: "0%", textAlign: "center" }}>{bank.holderName}</span>
             </div>
 
             <div className="give-bank-row" style={{ justifyContent: "center", gap: "6px", marginBottom: "10px" }}>
-              <span className="give-bank-label" style={{ color: "#1a2d5a", fontSize: "14px" }}>ACCOUNT NO :</span>
+              <span className="give-bank-label" style={{ color: "#333333", fontSize: "14px", fontWeight: "700" }}>ACCOUNT NO :</span>
               <span className="give-bank-value account" style={{ textAlign: "center" }}>
                 {bank.accountNo}
               </span>
             </div>
 
             <div className="give-bank-row" style={{ justifyContent: "center", gap: "6px", marginBottom: "10px" }}>
-              <span className="give-bank-label" style={{ color: "#1a2d5a", fontSize: "14px" }}>IFSC:</span>
+              <span className="give-bank-label" style={{ color: "#333333", fontSize: "14px" }}>IFSC:</span>
               <span className="give-bank-value" style={{ textAlign: "center" }}>{bank.ifsc}</span>
             </div>
 
-            <div className="give-bank-row" style={{ justifyContent: "center", gap: "6px" }}>
-              <span className="give-bank-label" style={{ color: "#1a2d5a", fontSize: "14px" }}>BRANCH:</span>
+            <div className="give-bank-row" style={{ justifyContent: "center", gap: "6px", marginBottom: "10px" }}>
+              <span className="give-bank-label" style={{ color: "#333333", fontSize: "14px" }}>BRANCH:</span>
               <span className="give-bank-value" style={{ textAlign: "center" }}>{bank.branch}</span>
             </div>
           </div>

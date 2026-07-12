@@ -227,8 +227,8 @@ export default function OurBranches() {
         </div>
       </section>
 
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "16px", margin: "1rem 0" }}>
-        <div style={{ position: "relative", width: "560px" }}>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "16px", margin: "1rem 0", flexWrap: "wrap", padding: "0 16px" }}>
+        <div style={{ position: "relative", width: "100%", maxWidth: "560px" }}>
           <svg
             style={{ position: "absolute", left: "24px", top: "50%", transform: "translateY(-50%)" }}
             width="20"
@@ -249,21 +249,23 @@ export default function OurBranches() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             style={{
-              width: "560px",
+              width: "100%",
               height: "59px",
               borderRadius: "100px",
               border: "1px solid #ccc",
               padding: "0 24px 0 56px",
               fontFamily: "Poppins",
               fontSize: "14px",
-              outline: "none"
+              outline: "none",
+              boxSizing: "border-box"
             }}
           />
         </div>
         <div
           onClick={() => setIsOn(!isOn)}
           style={{
-            width: "560px",
+            width: "100%",
+            maxWidth: "560px",
             height: "59px",
             borderRadius: "100px",
             border: "1px solid #ccc",
@@ -314,16 +316,20 @@ export default function OurBranches() {
         display: "flex",
         justifyContent: "center",
         marginTop: "16px",
-        marginBottom: "6rem"
+        marginBottom: "6rem",
+        padding: "0 16px"
       }}>
-        <div style={{
+        <div className="branches-grid" style={{
           display: "grid",
           gridTemplateColumns: "repeat(3, 367px)",
-          gap: "16px"
+          gap: "16px",
+          width: "100%",
+          maxWidth: "1200px"
         }}>
             {(isOn ? internationalBranches : nationalBranches).filter((b) => b.name.toLowerCase().includes(search.toLowerCase()) || b.description.toLowerCase().includes(search.toLowerCase())).map((branch, i) => (
-              <div key={i} style={{
-                width: "367px",
+              <div key={i} className="branch-card" style={{
+                width: "100%",
+                maxWidth: "367px",
                 height: "195px",
                 borderRadius: "20px",
                 background: "#DBEAFE",
