@@ -61,7 +61,7 @@ export default function Prayer() {
             </div>
 
           </div>
-         <div className="section-copy-center" style={{marginTop: "-20px", fontSize: "14px"}}>
+         <div className="section-copy-center" style={{marginTop: "-20px", fontSize: "18px", lineHeight: "1.8"}}>
   The Prayer Mountain is a sacred place dedicated to prayer, meditation, and spiritual renewal. It is where believers gather to
  seek God's presence, intercede for their needs, and grow in faith. Here, individuals can experience deep encounters with 
 God and leave spiritually rejuvenated.
@@ -81,7 +81,7 @@ God and leave spiritually rejuvenated.
         </div>
       </section>
 
-      <div className="space-y-8 py-8 overflow-hidden">
+      <div className="overflow-hidden" style={{ display: "flex", flexDirection: "column", gap: "40px", padding: "32px 0" }}>
         {[
           ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389844/prayer-mountain_si9eqw.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389842/prayermountain-2_bqdzqu.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389842/prayermountain-3_nk78bl.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389845/prayermountain-4_wsq41o.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389844/prayermountain-5_qfycgu.png"],
           ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389844/prayermountain-6_y6djsq.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389845/prayermountain-7_m5jj1g.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389844/prayermountain-6_y6djsq.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389842/prayermountain-3_nk78bl.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389844/prayermountain-5_qfycgu.png"]

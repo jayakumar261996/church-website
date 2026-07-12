@@ -81,7 +81,7 @@ Empowering the next generation to walk in faith, truth, and the power of God.
         </div>
       </section>
 
-      <div className="space-y-8 py-8 overflow-hidden">
+      <div className="overflow-hidden" style={{ display: "flex", flexDirection: "column", gap: "40px", padding: "32px 0" }}>
         {[
           ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389046/multimedia-1_bmuxlt.jpg", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389044/multimedia-2_wzvjw1.jpg", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389044/multimedia-3_pdrhgn.jpg", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389044/multimedia-4_pnlpwg.jpg", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389044/multimedia-2_wzvjw1.jpg"],
           ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389046/multimedia-1_bmuxlt.jpg", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389046/multimedia-7_ujz6ym.jpg", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389046/multimedia-1_bmuxlt.jpg", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389044/multimedia-2_wzvjw1.jpg", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389046/multimedia-7_ujz6ym.jpg"]
@@ -104,11 +104,12 @@ Empowering the next generation to walk in faith, truth, and the power of God.
       </div>
 
       <div style={{
-        width: "1140px",
-        height: "238px",
+        width: "100%",
+        maxWidth: "1140px",
+        minHeight: "238px",
         borderRadius: "40px",
-        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
-        margin: "0 auto 44px",
+        background: "#122F4A",
+        margin: "80px auto 44px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -117,7 +118,11 @@ Empowering the next generation to walk in faith, truth, and the power of God.
         boxSizing: "border-box",
         opacity: 1
       }}>
-        <p className="banner-text" style={{ marginBottom: "16px" }}>What is Sunday School?</p>
+        <div style={{ display: "flex", alignItems: "center", width: "100%", marginBottom: "16px" }}>
+          <div className="branches-line" style={{ margin: 0 }} />
+          <p className="banner-text" style={{ margin: "0 30px", whiteSpace: "nowrap" }}>What is Multimedia Institute?</p>
+          <div className="branches-line" style={{ margin: 0 }} />
+        </div>
         <p style={{
           textAlign: "center",
           fontFamily: "'Poppins', sans-serif",
@@ -133,10 +138,11 @@ Empowering the next generation to walk in faith, truth, and the power of God.
       </div>
 
       <div style={{
-        width: "1140px",
-        height: "238px",
+        width: "100%",
+        maxWidth: "1140px",
+        minHeight: "238px",
         borderRadius: "40px",
-        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
+        background: "#122F4A",
         margin: "0 auto 44px",
         display: "flex",
         flexDirection: "column",
@@ -146,7 +152,11 @@ Empowering the next generation to walk in faith, truth, and the power of God.
         boxSizing: "border-box",
         opacity: 1
       }}>
-        <p className="banner-text" style={{ marginBottom: "16px" }}>Purpose & Vision</p>
+        <div style={{ display: "flex", alignItems: "center", width: "100%", marginBottom: "16px" }}>
+          <div className="branches-line" style={{ margin: 0 }} />
+          <p className="banner-text" style={{ margin: "0 30px", whiteSpace: "nowrap" }}>Purpose & Vision</p>
+          <div className="branches-line" style={{ margin: 0 }} />
+        </div>
         <p style={{
           textAlign: "center",
           fontFamily: "'Poppins', sans-serif",
