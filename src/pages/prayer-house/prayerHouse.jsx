@@ -82,7 +82,7 @@ Encounter God. Experience Healing. Walk in His Presence.
         </div>
       </section>
 
-      <div className="space-y-8 py-8 overflow-hidden">
+      <div className="overflow-hidden" style={{ display: "flex", flexDirection: "column", gap: "40px", padding: "32px 0" }}>
         {[
           ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389727/prayerhouse-1_twqkfv.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389728/prayerhouse-2_enh4lv.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389730/prayerhouse-3_bdeufj.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389728/prayerhouse-4_r0xixr.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389731/prayerhouse-5_izam94.png"],
           ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389729/prayerhouse-6_oqplfz.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389729/prayerhouse-7_yjaz9v.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389731/prayerhouse-8_eoz771.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389731/prayerhouse-9_sjfkg2.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389731/prayerhouse-5_izam94.png"]
@@ -109,8 +109,8 @@ Encounter God. Experience Healing. Walk in His Presence.
         maxWidth: "1140px",
         minHeight: "238px",
         borderRadius: "40px",
-        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
-        margin: "0 auto 44px",
+        background: "#122F4A",
+        margin: "80px auto 44px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -119,7 +119,11 @@ Encounter God. Experience Healing. Walk in His Presence.
         boxSizing: "border-box",
         opacity: 1
       }}>
-        <p className="banner-text" style={{ marginBottom: "16px" }}>What is Prayer House?</p>
+        <div style={{ display: "flex", alignItems: "center", width: "100%", marginBottom: "16px" }}>
+          <div className="branches-line" style={{ margin: 0 }} />
+          <p className="banner-text" style={{ margin: "0 30px", whiteSpace: "nowrap" }}>What is Prayer House?</p>
+          <div className="branches-line" style={{ margin: 0 }} />
+        </div>
         <p style={{
           textAlign: "center",
           fontFamily: "'Poppins', sans-serif",
@@ -139,7 +143,7 @@ Encounter God. Experience Healing. Walk in His Presence.
         maxWidth: "1140px",
         minHeight: "238px",
         borderRadius: "40px",
-        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
+        background: "#122F4A",
         margin: "0 auto 44px",
         display: "flex",
         flexDirection: "column",
@@ -149,7 +153,11 @@ Encounter God. Experience Healing. Walk in His Presence.
         boxSizing: "border-box",
         opacity: 1
       }}>
-        <p className="banner-text" style={{ marginBottom: "16px" }}>Purpose & Vision</p>
+        <div style={{ display: "flex", alignItems: "center", width: "100%", marginBottom: "16px" }}>
+          <div className="branches-line" style={{ margin: 0 }} />
+          <p className="banner-text" style={{ margin: "0 30px", whiteSpace: "nowrap" }}>Purpose & Vision</p>
+          <div className="branches-line" style={{ margin: 0 }} />
+        </div>
         <p style={{
           textAlign: "center",
           fontFamily: "'Poppins', sans-serif",

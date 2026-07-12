@@ -265,7 +265,7 @@ power through healing, deliverance, and transformation.
             </div>
             <div className="feature-panel" style={{ textAlign: "left" }}>
               <h2 className="feature-panel-title">Faith Resources</h2>
-              <p className="section-copy" style={{ width: "435px" }}>
+              <p className="section-copy" style={{ width: "100%", maxWidth: "435px" }}>
                 Explore books, teachings, and spiritual resources that will strengthen your walk with God.
               </p>
               <NavLink to="/store" style={{ transition: "none" }}>

@@ -353,7 +353,7 @@ body{
 }
 
 .line{
-  width:323px;
+  flex: 1;
   height:8px;
   background: #EFBF04;
 }
@@ -1305,7 +1305,7 @@ body {
 
 .section-dark {
   background: #122F4A;
-  padding: 50px 20px;
+  padding: 50px 0;
   color: #fff;
 }
 
@@ -1338,15 +1338,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 20px;
   margin-bottom: 36px;
+  padding: 0;
 }
 
 .section-heading-rule {
   flex: 1;
   height: 10px;
-  width:229px;
-  background: linear-gradient(90deg, transparent, #D4A017, transparent);
+  background: #EFBF04;
+  margin: 0 30px;
 }
 
 .section-heading-alt-title {
@@ -1924,7 +1925,7 @@ body {
 
 .banner-section {
   background: linear-gradient(135deg, #0a1628, #1a2d5a);
-  padding: 22px 24px;
+  padding: 22px 0;
 }
 
 .banner-content {
@@ -1934,22 +1935,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 46px;
 }
 
 .banner-rule {
   flex: 1;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #D4A017);
+  height: 10px;
+  background: #EFBF04;
+  margin: 0 30px;
 }
 
 .banner-text {
   color: #FFFFFF;
   font-family: 'Poppins', serif;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 34px;
+  font-weight: 600;
   line-height: 100%;
   text-align: center;
+  white-space: nowrap;
 }
 .ministries-image {
   width: 100%;
@@ -3759,9 +3762,8 @@ body {
   }
   
   .line {
-    width: 40px;
-    height: 3px;
-    flex-shrink: 0;
+    flex: 1;
+    height: 6px;
   }
   
   .hero-banner {
@@ -4401,7 +4403,7 @@ body {
   }
   
   .section-heading-rule {
-    width: 60px;
+    display: none;
   }
   
   .faith-grid {
@@ -4474,11 +4476,117 @@ body {
   }
   
   .banner-text {
+    font-size: 22px;
+    white-space: normal;
+  }
+
+  .section-copy {
+    min-width: auto;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .section-copy-center {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .section-about-top {
+    padding: 30px 16px;
+  }
+
+  .feature-panel .section-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .schedule-box p {
     font-size: 14px;
+  }
+
+  .schedule-box h5 {
+    font-size: 18px;
+  }
+
+  .gold-divider-image {
+    width: 44px !important;
+    height: 44px !important;
+    flex-shrink: 0;
+  }
+
+  .gold-divider {
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .section-heading-alt {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .section-heading-rule {
+    width: 40px;
   }
 }
 
 @media (max-width: 480px) {
+  .section-copy {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .section-copy-center {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .banner-text {
+    font-size: 18px;
+    white-space: normal;
+  }
+
+  .schedule-box p {
+    font-size: 13px;
+  }
+
+  .schedule-box h5 {
+    font-size: 16px;
+  }
+
+  .gold-divider-image {
+    width: 36px !important;
+    height: 36px !important;
+    flex-shrink: 0;
+  }
+
+  .gold-divider {
+    gap: 6px;
+  }
+
+  .section-heading-alt {
+    gap: 8px;
+  }
+
+  .section-heading-rule {
+    width: 30px;
+  }
+
   .grid-4 {
     grid-template-columns: 1fr;
   }
@@ -4618,7 +4726,7 @@ img {
 }
 
 .branches-banner-section {
-  background: linear-gradient(135deg, #0a1628, #1a2d5a);
+  background: #122F4A;
   padding: 22px 0;
   margin-left: -32px;
   margin-right: -32px;
@@ -4637,9 +4745,10 @@ img {
 }
 
 .branches-line {
-  width: 323px;
-  height: 20px;
+  flex: 1;
+  height: 10px;
   background: #EFBF04;
+  margin: 0 30px;
 }
 
 @media (max-width: 768px) {
@@ -4673,7 +4782,8 @@ img {
   }
 
   .branches-line {
-    width: 100px;
+    flex: 1;
+    margin: 0 10px;
   }
 }
 

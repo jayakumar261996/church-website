@@ -82,7 +82,7 @@ Equipping believers with the Word of God to walk in truth, power, and purpose.
         </div>
       </section>
 
-      <div className="space-y-8 py-8 overflow-hidden">
+      <div className="overflow-hidden" style={{ display: "flex", flexDirection: "column", gap: "40px", padding: "32px 0" }}>
         {[
           ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389622/biblecollege-1_pbel4g.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389623/biblecollege-2_pzra2k.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389623/biblecollage-3_f9bci4.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389625/biblecollege-4_vm5w5v.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389623/biblecollege-5_opy5mb.png"],
           ["https://res.cloudinary.com/duyytaxgd/image/upload/v1783389623/biblecollage-3_f9bci4.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389623/biblecollege-7_kpu3si.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389626/biblecollege-8_murepz.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389624/biblecollege-9_qghwxc.png", "https://res.cloudinary.com/duyytaxgd/image/upload/v1783389625/biblecollege-10_zg7wvm.png"]
@@ -105,11 +105,12 @@ Equipping believers with the Word of God to walk in truth, power, and purpose.
       </div>
 
       <div style={{
-        width: "1140px",
-        height: "238px",
+        width: "100%",
+        maxWidth: "1140px",
+        minHeight: "238px",
         borderRadius: "40px",
-        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
-        margin: "0 auto 44px",
+        background: "#122F4A",
+        margin: "80px auto 44px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -118,7 +119,11 @@ Equipping believers with the Word of God to walk in truth, power, and purpose.
         boxSizing: "border-box",
         opacity: 1
       }}>
-        <p className="banner-text" style={{ marginBottom: "16px" }}>What is Bible College?</p>
+        <div style={{ display: "flex", alignItems: "center", width: "100%", marginBottom: "16px" }}>
+          <div className="branches-line" style={{ margin: 0 }} />
+          <p className="banner-text" style={{ margin: "0 30px", whiteSpace: "nowrap" }}>What is Bible College?</p>
+          <div className="branches-line" style={{ margin: 0 }} />
+        </div>
         <p style={{
           textAlign: "center",
           fontFamily: "'Poppins', sans-serif",
@@ -134,10 +139,11 @@ Equipping believers with the Word of God to walk in truth, power, and purpose.
       </div>
 
       <div style={{
-        width: "1140px",
-        height: "238px",
+        width: "100%",
+        maxWidth: "1140px",
+        minHeight: "238px",
         borderRadius: "40px",
-        background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
+        background: "#122F4A",
         margin: "0 auto 44px",
         display: "flex",
         flexDirection: "column",
@@ -147,7 +153,11 @@ Equipping believers with the Word of God to walk in truth, power, and purpose.
         boxSizing: "border-box",
         opacity: 1
       }}>
-        <p className="banner-text" style={{ marginBottom: "16px" }}>Purpose & Vision</p>
+        <div style={{ display: "flex", alignItems: "center", width: "100%", marginBottom: "16px" }}>
+          <div className="branches-line" style={{ margin: 0 }} />
+          <p className="banner-text" style={{ margin: "0 30px", whiteSpace: "nowrap" }}>Purpose & Vision</p>
+          <div className="branches-line" style={{ margin: 0 }} />
+        </div>
         <p style={{
           textAlign: "center",
           fontFamily: "'Poppins', sans-serif",

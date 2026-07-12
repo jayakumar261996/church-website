@@ -104,12 +104,53 @@ Give your Tithe & Offerings to the Lord </h1>
 
     <div className="give-qr-grid" style={{ marginTop: "-60px" }}>
       {qrCodes.map((qr, index) => (
-        <div key={index} className="give-qr-card">
+        <div key={index} className="give-qr-card" style={{ position: "relative" }}>
           <img
             src={qr.image}
             alt={qr.name}
             className="give-qr-image"
             style={{ width: '405px', height: '811px', objectFit: 'contain' }}
+          />
+          <img
+            src={index === 1 ? "/img/axisqr.png" : "/img/ICIC BANK QR CODE - Copy 1 1.svg"}
+            alt={index === 1 ? "Axis QR Code" : "ICICI QR Code"}
+            style={{
+              position: "absolute",
+              top: index === 1 ? "260px" : "180px",
+              left: "42%",
+              transform: "translateX(-50%)",
+              width: index === 1 ? "90px" : "200px",
+              height: index === 1 ? "90px" : "200px",
+              objectFit: "contain"
+            }}
+          />
+          {index === 1 && (
+            <img
+              src="/img/axisbank.svg"
+              alt="Axis Bank Logo"
+              style={{
+                position: "absolute",
+                top: "200px",
+                left: "42%",
+                transform: "translateX(-50%)",
+                width: "100px",
+                height: "40px",
+                objectFit: "contain"
+              }}
+            />
+          )}
+          <img
+            src={index === 1 ? "/img/gpay.png" : "/img/hdfcqr.png"}
+            alt={index === 1 ? "GPay" : "HDFC QR Code"}
+            style={{
+              position: "absolute",
+              top: "380px",
+              left: "42%",
+              transform: "translateX(-50%)",
+              width: "150px",
+              height: "150px",
+              objectFit: "contain"
+            }}
           />
         </div>
       ))}
