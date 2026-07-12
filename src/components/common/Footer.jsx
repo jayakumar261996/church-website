@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -10,7 +12,7 @@ export default function Footer() {
 
         <div className="footer-inner">
           <div className="footer-grid">
-            <div className="footer-brand">
+            <div className="footer-column footer-brand">
               <img
                 src="/img/icon.svg"
                 alt="Ankur Narula Ministries"
@@ -19,28 +21,32 @@ export default function Footer() {
               <h2 className="footer-brand-title">Ankur Narula Ministries</h2>
             </div>
 
-            <div className="footer-column">
-              <h3 className="footer-heading">Contact Us</h3>
-              <p className="footer-text">info@ankurnarula.org</p>
-              <p className="footer-text">Phone: 0181-520-7777</p>
-              <h3 className="footer-heading footer-heading--spaced">Links</h3>
-              <div className="footer-links">
-                <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
-                <a href="/terms" className="footer-link">Terms and Conditions</a>
+            <div className="footer-column footer-contact-links">
+              <div className="footer-contact-inner">
+                <h3 className="footer-heading">Contact Us</h3>
+                <p className="footer-text">info@ankurnarula.org</p>
+                <p className="footer-text">Phone: 0181-520-7777</p>
+              </div>
+              <div className="footer-links-inner">
+                <h3 className="footer-heading footer-heading--spaced">Links</h3>
+                <div className="footer-links">
+                  <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+                  <Link to="/terms" className="footer-link">Terms and Conditions</Link>
+                </div>
               </div>
             </div>
 
             <div className="footer-column">
               <h3 className="footer-heading">Pages</h3>
               <div className="footer-links">
-                <a href="#" className="footer-link">Branches</a>
-                <a href="#" className="footer-link">Prayer Request</a>
-                <a href="#" className="footer-link">Give</a>
-                <a href="#" className="footer-link">Prayer Mountain</a>
-                <a href="#" className="footer-link">Prayer House</a>
-                <a href="#" className="footer-link">Sunday School</a>
-                <a href="#" className="footer-link">Bible College</a>
-                <a href="#" className="footer-link">Sophia College</a>
+                <Link to="/our-branches" className="footer-link">Branches</Link>
+                <Link to="/prayer-request" className="footer-link">Prayer Request</Link>
+                <Link to="/give" className="footer-link">Give</Link>
+                <Link to="/prayer" className="footer-link">Prayer Mountain</Link>
+                <Link to="/prayer-house" className="footer-link">Prayer House</Link>
+                <Link to="/sunday-school" className="footer-link">Sunday School</Link>
+                <Link to="/bible-college" className="footer-link">Bible College</Link>
+                <Link to="/sofia-college" className="footer-link">Sophia College</Link>
               </div>
             </div>
 

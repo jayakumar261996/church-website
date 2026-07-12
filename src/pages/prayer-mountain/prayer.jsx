@@ -61,7 +61,7 @@ export default function Prayer() {
             </div>
 
           </div>
-         <div className="section-copy-center" style={{marginTop: "-20px"}}>
+         <div className="section-copy-center" style={{marginTop: "-20px", fontSize: "14px"}}>
   The Prayer Mountain is a sacred place dedicated to prayer, meditation, and spiritual renewal. It is where believers gather to
  seek God's presence, intercede for their needs, and grow in faith. Here, individuals can experience deep encounters with 
 God and leave spiritually rejuvenated.
@@ -139,10 +139,11 @@ God and leave spiritually rejuvenated.
         </div>
       </section>
 
-      <div style={{ display: "flex", justifyContent: "center", gap: "24px", padding: "24px 0" }}>
-        <div style={{
+      <div style={{ display: "flex", justifyContent: "center", gap: "24px", padding: "24px 16px", flexWrap: "wrap" }}>
+        <div className="prayer-testimony-card" style={{
           display: "flex",
-          width: "520px",
+          width: "100%",
+          maxWidth: "520px",
           height: "259px",
           borderRadius: "20px",
           overflow: "hidden",
@@ -151,6 +152,7 @@ God and leave spiritually rejuvenated.
           <img
             src="/img/test-1.svg"
             alt="Testimony"
+            className="prayer-testimony-img"
             style={{ width: "220px", height: "100%", objectFit: "cover" }}
           />
           <div style={{ padding: "24px", display: "flex", flexDirection: "column", justifyContent: "space-between", flex: 1 }}>
@@ -181,9 +183,10 @@ God and leave spiritually rejuvenated.
           </div>
         </div>
 
-        <div style={{
+        <div className="prayer-testimony-card" style={{
           display: "flex",
-          width: "520px",
+          width: "100%",
+          maxWidth: "520px",
           height: "259px",
           borderRadius: "20px",
           overflow: "hidden",
@@ -192,6 +195,7 @@ God and leave spiritually rejuvenated.
           <img
             src="/img/test-2.svg"
             alt="Testimony"
+            className="prayer-testimony-img"
             style={{ width: "220px", height: "100%", objectFit: "cover" }}
           />
           <div style={{ padding: "24px", display: "flex", flexDirection: "column", justifyContent: "space-between", flex: 1 }}>
@@ -234,9 +238,10 @@ God and leave spiritually rejuvenated.
         </div>
       </section>
 
-        <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "24px 0" }}>
-          <div style={{
-            width: "367px",
+        <div style={{ display: "flex", justifyContent: "center", gap: "16px", padding: "24px 16px", flexWrap: "wrap" }}>
+          <div className="prayer-join-card" style={{
+            width: "100%",
+            maxWidth: "367px",
             height: "185px",
             borderRadius: "20px",
             border: "1px solid #ccc",
@@ -271,8 +276,9 @@ God and leave spiritually rejuvenated.
             </p>
           </div>
 
-          <div style={{
-            width: "367px",
+          <div className="prayer-join-card" style={{
+            width: "100%",
+            maxWidth: "367px",
             height: "185px",
             borderRadius: "20px",
             border: "1px solid #ccc",

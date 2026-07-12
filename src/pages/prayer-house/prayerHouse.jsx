@@ -104,9 +104,10 @@ Encounter God. Experience Healing. Walk in His Presence.
         ))}
       </div>
 
-      <div style={{
-        width: "1140px",
-        height: "238px",
+      <div className="prayer-house-card" style={{
+        width: "100%",
+        maxWidth: "1140px",
+        minHeight: "238px",
         borderRadius: "40px",
         background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
         margin: "0 auto 44px",
@@ -133,9 +134,10 @@ Encounter God. Experience Healing. Walk in His Presence.
         </p>
       </div>
 
-      <div style={{
-        width: "1140px",
-        height: "238px",
+      <div className="prayer-house-card" style={{
+        width: "100%",
+        maxWidth: "1140px",
+        minHeight: "238px",
         borderRadius: "40px",
         background: "linear-gradient(135deg, #0a1628, #1a2d5a)",
         margin: "0 auto 44px",
