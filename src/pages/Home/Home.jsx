@@ -11,13 +11,14 @@ export default function ChurchLandingPage() {
     <>
 
       <div className="page">
+        <div style={{ backgroundImage: "url('/img/bg.png')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <Header />
 
         <section className="hero container">
           <div className="title-row">
             <div className="line"></div>
             <div>
-              <h1 className="hero-title-philosopher">Welcome to Ankur Narula Ministries</h1>
+              <h1 className="hero-title-philosopher">Welcome to Ankur Narula <span className="mobile-gap">Ministries</span></h1>
               <h2 className="hero-subtitle-philosopher">The Church Of Signs And Wonders</h2>
             </div>
             <div className="line"></div>
@@ -43,6 +44,7 @@ export default function ChurchLandingPage() {
             />
           </div>
         </section>
+        </div>
 
         <section className="gallery container">
           <div className="section-title">
@@ -68,10 +70,10 @@ export default function ChurchLandingPage() {
           </div>
 
           <div className="gallery-grid">
-            <img src="/img/5.svg" />
-            <img src="/img/2.svg" />
-            <img src="/img/3.svg" />
-            <img src="/img/4.svg" />
+            <div className="gallery-item"><img src="/img/4.svg" /></div>
+            <div className="gallery-item"><img src="/img/5.svg" /></div>
+            <div className="gallery-item"><img src="/img/3rdhome.jpg" /></div>
+            <div className="gallery-item"><img src="/img/4thhome.jpg" /></div>
           </div>
 
           <div className="pastor-info">

@@ -34,10 +34,13 @@ const LEADERS = [
 ]
 
 const CRUSADE_PHOTOS = [
-  { bg: "linear-gradient(135deg, #1a0a00, #5c3317)" },
-  { bg: "linear-gradient(135deg, #0a0a1a, #1a1a4a)" },
-  { bg: "linear-gradient(135deg, #1a0010, #4a0030)" },
-  { bg: "linear-gradient(135deg, #001a0a, #004a20)" },
+  { img: "/img/crusade-2.png" },
+  { img: "/img/crusade-1.png" },
+  { img: "/img/crusade-2.png" },
+  { img: "/img/crusade-1.png" },
+  { img: "/img/crusade-3png.png" },
+  { img: "/img/crusade-3png.png" },
+  { img: "/img/crusade-2.png" },
 ]
 
 const PRESENCE_PHOTOS = [
@@ -96,8 +99,14 @@ export default function AboutPage() {
         <div className="section">
           <div className="feature-card feature-card-identity">
             <div className="feature-card-overlay" />
-            <p className="feature-card-subtitle">Our Identity</p>
-            <h2 className="feature-card-title">Our Vision and Our mission</h2>
+            <div className="identity-title-row">
+              <div className="line"></div>
+              <div>
+                <p className="feature-card-subtitle">Our Identity</p>
+                <h2 className="feature-card-title">Our Vision and Our mission</h2>
+              </div>
+              <div className="line"></div>
+            </div>
           </div>
 
           <div className="vision-grid-wrapper">
@@ -127,7 +136,11 @@ power through healing, deliverance, and transformation.
       {/* ── OUR LEADERS ── */}
       <section className="section section-white">
         <div className="section">
-          <h2 className="section-title" style={{ textAlign: "center", justifyContent: "center" }}>Our Leaders</h2>
+          <div className="section-title" style={{ textAlign: "center", justifyContent: "center" }}>
+            <div className="line"></div>
+            <h2 style={{ whiteSpace: "nowrap", color: "#808080", fontFamily: "'Poppins', serif", fontSize: "28px" }}>Our Leaders</h2>
+            <div className="line"></div>
+          </div>
 
           <div className="grid-3 leader-grid">
             {LEADERS.map((leader, i) => (
@@ -288,15 +301,23 @@ power through healing, deliverance, and transformation.
       </section>
 
       {/* ── CRUSADE PHOTO GRID ── */}
-      <section className="section section-white">
+      <section className="section section-white" style={{ overflow: "hidden" }}>
         <div className="section">
-          <div className="grid-4 crusade-grid">
-            {CRUSADE_PHOTOS.map((photo, i) => (
-              <div key={i} className="crusade-card" style={{ background: photo.bg }}>
-                <div className="crusade-card-overlay" />
-                <div className="crusade-card-icon">✝</div>
-              </div>
-            ))}
+          <div className="leader-grid" style={{ justifyContent: "center", gap: "16px", overflow: "visible", alignItems: "flex-start" }}>
+            {CRUSADE_PHOTOS.map((photo, i) => {
+              const heights = [280, 340, 410, 502.59, 410, 340, 280];
+              const widths = ["180px", "220px", "290px", "366px", "290px", "220px", "180px"];
+              const margins = ["140px", "100px", "50px", "0", "50px", "100px", "140px"];
+              return (
+                <div key={i} className="leader-card" style={{
+                  width: widths[i],
+                  height: `${heights[i]}px`,
+                  marginTop: margins[i]
+                }}>
+                  <img src={photo.img} alt="Crusade" className="leader-card-img" />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -305,14 +326,14 @@ power through healing, deliverance, and transformation.
       <section className="banner-section">
         <div className="banner-content">
           <div className="banner-rule" />
-          <p className="banner-text">MAN OF GOD INTERNATIONAL PRESENCE</p>
+          <p className="banner-text" style={{ color: "#FFFFFF" }}>MAN OF GOD INTERNATIONAL PRESENCE</p>
           <div className="banner-rule" />
         </div>
       </section>
-      <div className="space-y-8 py-8 overflow-hidden">
+      <div className="overflow-hidden" style={{ display: "flex", flexDirection: "column", gap: "40px", padding: "32px 0", background: "#fff" }}>
         {[
-          ["/img/prayer-mountain-1.jpg", "/img/prayer-mountain-2.jpg", "/img/prayer-mountain-3.jpg", "/img/prayer-mountain-4.jpg", "/img/prayer-mountain-5.jpg"],
-          ["/img/prayer-mountain-6.jpg", "/img/prayer-mountain-7.jpg", "/img/prayer-mountain-8.jpg", "/img/prayer-mountain-9.jpg", "/img/prayer-mountain-10.jpg"]
+          ["/img/man-1.png", "/img/man-2.png", "/img/man-3.png", "/img/man-4.png", "/img/man-5.png"],
+          ["/img/man-4.png", "/img/man-7.png", "/img/man-8.png", "/img/man-9.png", "/img/man-7.png"]
         ].map((row, i) => (
           <div
             key={i}
@@ -324,7 +345,7 @@ power through healing, deliverance, and transformation.
                 key={j}
                 src={src}
                 alt="Man of God"
-                className="h-56 w-[22%] flex-shrink-0 rounded-md object-cover snap-start"
+                className="w-[22%] h-auto flex-shrink-0 rounded-md object-cover snap-start"
               />
             ))}
           </div>
