@@ -278,7 +278,7 @@ body{
 
 .page{
   width:100%;
-  overflow:hidden;
+  overflow:visible;
 }
 
 .container{
@@ -470,10 +470,19 @@ body{
   gap:20px;
 }
 
+.gallery-item{
+  width:100%;
+  aspect-ratio: 4/5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 .gallery-grid img{
   width:100%;
-  height:360px;
+  height:100%;
   object-fit:cover;
+  object-position: center;
+  display: block;
 }
 
 .pastor-info{
@@ -983,7 +992,10 @@ footer li{
     font-size:34px;
   }
 
-  .gallery-grid,
+  .gallery-grid{
+    grid-template-columns:repeat(4,1fr);
+  }
+
   .cards-grid,
   .social-grid,
   .events-grid,
@@ -992,9 +1004,51 @@ footer li{
   }
 
   .line{
-    width:60px;
+    flex: 0 0 auto;
+    width:30px;
+    height:4px;
+  }
+
+  .gallery .section-title{
+    margin-left:-20px;
+    margin-right:-20px;
+    padding:0;
+  }
+
+  .section-white .section-title{
+    padding:0;
+  }
+
+  .gallery .section-title .line{
+    flex: 1;
+    width:auto;
+    height: 4px;
+  }
+
+  .section-white .section-title .line{
+    flex: 0 0 auto;
+    width: 100px;
+    height: 4px;
+    
+  }
+
+  .schedule .section-title{
+    margin-left:10px;
+    margin-right:10px;
+    padding:20px;
+  }
+
+  .schedule .section-title .line{
+    flex: 1;
+    width:auto;
+  }
+
+  .mobile-gap{
+    display:block;
+    margin-top:10px;
   }
 }
+
 
   .main-header {
     width: 80%;
@@ -1283,7 +1337,7 @@ body {
 
 .hero-section {
   background: #FFFFE9;
-  padding: 50px 20px 40px;
+  padding: 5px 20px 40px;
   text-align: center;
 }
 
@@ -1616,6 +1670,14 @@ body {
   margin-top: 0;
 }
 
+.identity-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  width: 100%;
+}
+
 .feature-card-resource {
   background: linear-gradient(135deg, #0d1f4a, #1a3a6b, #0d1f4a);
   color: #fff;
@@ -1942,13 +2004,13 @@ body {
   flex: 1;
   height: 10px;
   background: #EFBF04;
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 .banner-text {
   color: #FFFFFF;
   font-family: 'Poppins', serif;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 100%;
   text-align: center;
@@ -3762,7 +3824,8 @@ body {
   }
   
   .line {
-    flex: 1;
+    flex: 0 0 auto;
+    width: 40px;
     height: 6px;
   }
   
@@ -3813,12 +3876,12 @@ body {
   }
   
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
   }
   
-  .gallery-grid img {
-    height: 200px;
+  .gallery-item {
+    aspect-ratio: 4/5;
   }
   
   .pastor-info {
@@ -3837,12 +3900,12 @@ body {
 
 @media (max-width: 480px) {
   .gallery-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
   }
   
-  .gallery-grid img {
-    height: 250px;
+  .gallery-item {
+    aspect-ratio: 3/4;
   }
 }
 
@@ -4216,19 +4279,24 @@ body {
   }
   
   .leader-grid {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
   }
   
   .leader-grid .leader-card:nth-child(1),
   .leader-grid .leader-card:nth-child(3) {
-    width: 280px;
-    height: 380px;
+    width: 140px;
+    height: 200px;
+    margin-top: 30px;
   }
   
   .leader-grid .leader-card:nth-child(2) {
-    width: 280px;
-    height: 450px;
+    width: 140px;
+    height: 230px;
   }
   
   .hero-banner {
@@ -4281,7 +4349,7 @@ body {
   }
   
   .feature-card-title {
-    font-size: 18px;
+    font-size: 12px;
   }
   
   .feature-card-identity {
@@ -4291,10 +4359,18 @@ body {
     min-height: 180px;
     padding: 20px;
     border-radius: 24px;
+    overflow: visible;
+  }
+
+  .feature-card-identity .identity-title-row .line{
+    flex: 1;
+    width:auto;
+    margin-left:-20px;
+    margin-right:-20px;
   }
   
   .feature-card-subtitle {
-    font-size: 20px;
+    font-size: 12px;
     margin-top: 40px;
   }
   
@@ -4333,24 +4409,25 @@ body {
   }
   
   .leader-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
   }
   
   .leader-grid .leader-card:nth-child(1),
   .leader-grid .leader-card:nth-child(3) {
-    width: 100%;
-    max-width: 305px;
-    height: 350px;
-    margin-top: 0;
+    width: 110px;
+    height: 160px;
+    margin-top: 25px;
   }
   
   .leader-grid .leader-card:nth-child(2) {
-    width: 100%;
-    max-width: 305px;
-    height: 400px;
-    margin-top: 0;
+    width: 110px;
+    height: 190px;
   }
   
   .stats-grid {
@@ -4392,18 +4469,20 @@ body {
   }
   
   .section-heading-alt {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
   }
   
   .section-heading-alt-title {
     font-size: 22px;
-    white-space: normal;
+    white-space: nowrap;
     text-align: center;
   }
   
   .section-heading-rule {
-    display: none;
+    flex: 1;
+    height: 10px;
+    margin: 0;
   }
   
   .faith-grid {
@@ -4471,13 +4550,20 @@ body {
   }
   
   .banner-content {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    padding: 0 16px;
+  }
+  
+  .banner-rule {
+    flex: 1;
+    height: 10px;
+    margin: 0;
   }
   
   .banner-text {
-    font-size: 22px;
-    white-space: normal;
+    font-size: 18px;
+    white-space: nowrap;
   }
 
   .section-copy {
@@ -4499,8 +4585,17 @@ body {
     font-size: 26px;
   }
 
+  .hero-section {
+    padding: 5px 16px 15px;
+  }
+
   .section-about-top {
-    padding: 30px 16px;
+    padding: 5px 16px;
+  }
+
+  .hero-banner-about {
+    margin-top: 15px;
+    min-height: auto;
   }
 
   .feature-panel .section-copy {
@@ -4529,11 +4624,13 @@ body {
 
   .section-heading-alt {
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .section-heading-rule {
-    width: 40px;
+    flex: 1;
+    height: 10px;
+    margin: 0;
   }
 }
 
@@ -4557,8 +4654,8 @@ body {
   }
 
   .banner-text {
-    font-size: 18px;
-    white-space: normal;
+    font-size: 16px;
+    white-space: nowrap;
   }
 
   .schedule-box p {
@@ -4581,10 +4678,13 @@ body {
 
   .section-heading-alt {
     gap: 8px;
+    flex-wrap: nowrap;
   }
 
   .section-heading-rule {
-    width: 30px;
+    flex: 1;
+    height: 10px;
+    margin: 0;
   }
 
   .grid-4 {
@@ -4603,15 +4703,24 @@ body {
   .feature-card-identity {
     padding: 15px;
     border-radius: 16px;
+    overflow: visible;
+    height: auto;
+  }
+
+  .feature-card-identity .identity-title-row .line{
+    flex: 1;
+    width:auto;
+    margin-left:-20px;
+    margin-right:-20px;
   }
   
   .feature-card-subtitle {
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 30px;
   }
   
   .feature-card-title {
-    font-size: 16px;
+    font-size: 12px;
   }
   
   .vision-grid-wrapper {
@@ -4626,8 +4735,13 @@ body {
   .leader-grid .leader-card:nth-child(1),
   .leader-grid .leader-card:nth-child(3),
   .leader-grid .leader-card:nth-child(2) {
-    max-width: 280px;
-    height: 320px;
+    width: 100px;
+    height: 145px;
+    margin-top: 20px;
+  }
+
+  .leader-grid .leader-card:nth-child(2) {
+    height: 170px;
   }
   
   .stat-card-value {
